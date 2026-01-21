@@ -1,112 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hermeticum B.C.E. — Technology</title>
-  <meta name="description" content="Repository tecnologico ufficiale dell’ecosistema Hermeticum B.C.E. (Blindata · Computabile · Evolutiva)." />
+  <title>HERMETICUM B.C.E. — Technology</title>
   <style>
-    :root { color-scheme: dark; }
-    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#0b0c10; color:#e8e8e8; }
-    header, main, footer { max-width: 980px; margin: 0 auto; padding: 20px; }
-    .card { border: 1px solid #24262b; border-radius: 14px; padding: 16px; background: #0f1117; }
-    .muted { color:#b7bcc7; }
-    a { color:#9ad1ff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    h1 { font-size: 28px; margin: 0 0 8px; }
-    h2 { font-size: 18px; margin: 18px 0 10px; }
-    ul { margin: 10px 0 0 18px; }
-    code { background:#131722; padding: 2px 6px; border-radius: 8px; border: 1px solid #23283a; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 12px; }
-    .pill { display:inline-block; padding: 6px 10px; border: 1px solid #2a2f41; border-radius: 999px; background:#0c0f18; margin-right: 6px; margin-top: 6px; }
-    .topbar { border-bottom: 1px solid #1f2330; background:#0b0c10; position: sticky; top: 0; }
-    .nav { display:flex; gap: 12px; flex-wrap: wrap; align-items:center; }
-    .nav a { padding: 8px 10px; border-radius: 10px; border: 1px solid transparent; }
-    .nav a:hover { border-color:#2a2f41; background:#0f1117; }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:980px;margin:40px auto;padding:0 16px;line-height:1.5}
+    header{border-bottom:1px solid #ddd;padding-bottom:16px;margin-bottom:24px}
+    nav a{margin-right:12px}
+    .card{border:1px solid #ddd;border-radius:14px;padding:16px;margin:14px 0}
+    code{background:#f5f5f5;padding:2px 6px;border-radius:6px}
+    .muted{color:#666}
+    ul{padding-left:18px}
   </style>
 </head>
-
 <body>
-  <div class="topbar">
-    <header>
-      <div class="nav">
-        <strong>Hermeticum B.C.E.</strong>
-        <a href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/">Services (Hub)</a>
-        <a href="https://github.com/manuelcoletta1-source/hermeticum-bce-technology">Repository</a>
-      </div>
-    </header>
-  </div>
 
-  <main>
-    <section class="card">
-      <h1>Hermeticum B.C.E. — Technology</h1>
-      <div class="muted">Core tecnologico dell’ecosistema <strong>Blindata · Computabile · Evolutiva</strong>.</div>
+<header>
+  <h1>HERMETICUM B.C.E. — Technology</h1>
+  <p class="muted">
+    Nodo tecnico e documentale: standard, framework, evidenze e collegamenti ai repository esecutivi.
+    Questo repo è fonte canonica (auditabile).
+  </p>
+  <nav>
+    <a href="#packs">Packs</a>
+    <a href="#modules">Moduli</a>
+    <a href="#docs">Docs</a>
+    <a href="https://manuelcoletta1-source.github.io/hermeticum-bce/">Portal</a>
+    <a href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/">Services</a>
+  </nav>
+</header>
 
-      <div style="margin-top:12px;">
-        <span class="pill">Stato: 🟢 ATTIVO</span>
-        <span class="pill">Scope: Software · Toolchain · Moduli</span>
-        <span class="pill">Standard: UE-first</span>
-      </div>
+<section class="card" id="packs">
+  <h2>Packs (Canonici)</h2>
+  <p>Documenti pubblicabili e auditabili (UE-safe) collegati all’ecosistema.</p>
+  <ul>
+    <li>
+      <b>Legal Pack</b> — indice:
+      <a href="./docs/legal/00-index/">docs/legal/00-index</a>
+      · PDF:
+      <a href="./assets/pdf/OGGETTO-SOCIALE.pdf">OGGETTO-SOCIALE.pdf</a>
+    </li>
+    <li>
+      <b>IPR Service Pack</b> — indice:
+      <a href="./docs/ipr/00-index/">docs/ipr/00-index</a>
+      · PDF:
+      <a href="./assets/pdf/IPR-SERVICE-1.0.pdf">IPR-SERVICE-1.0.pdf</a>
+    </li>
+  </ul>
+  <p class="muted">
+    Nota: i documenti sono presentati come corpus tecnico-documentale; l’operatività esecutiva vive nei repo dedicati.
+  </p>
+</section>
 
-      <h2>Missione</h2>
-      <p class="muted">
-        Questo repository raccoglie e organizza i componenti software e le basi tecniche dei sistemi
-        Hermeticum B.C.E.: moduli, interfacce, strutture di dati, build e documentazione operativa.
-      </p>
+<section class="card" id="modules">
+  <h2>Moduli (Esecutivi)</h2>
+  <ul>
+    <li><b>UNEBDO</b> — proof engine: <a href="https://manuelcoletta1-source.github.io/unebdo/">unebdo</a></li>
+    <li><b>OPC</b> — policy engine: <a href="https://manuelcoletta1-source.github.io/opc/">opc</a></li>
+    <li><b>GitJoker-C2</b> — orchestrazione/audit: <a href="https://manuelcoletta1-source.github.io/gitjoker-c2/">gitjoker-c2</a></li>
+  </ul>
+</section>
 
-      <h2>Moduli Tecnologici</h2>
-      <div class="grid">
-        <div class="card">
-          <strong>UNEBDO</strong>
-          <div class="muted">Dispositivo giuridico-tecnico e tracciabilità.</div>
-        </div>
-        <div class="card">
-          <strong>CyberGlobal</strong>
-          <div class="muted">Layer di governance e infrastruttura cyber.</div>
-        </div>
-        <div class="card">
-          <strong>MetaExchange</strong>
-          <div class="muted">Scambio e orchestrazione di asset/metadata.</div>
-        </div>
-        <div class="card">
-          <strong>Io-Space</strong>
-          <div class="muted">Spazio operativo e identità in ambiente digitale.</div>
-        </div>
-        <div class="card">
-          <strong>NeuroLoop</strong>
-          <div class="muted">Loop cognitivo-operativo e analisi.</div>
-        </div>
-        <div class="card">
-          <strong>OPC</strong>
-          <div class="muted">Opponibilità · Policy · Computabilità.</div>
-        </div>
-      </div>
+<section class="card" id="docs">
+  <h2>Documentazione ΦΩ</h2>
+  <ul>
+    <li><a href="./docs/phi-omega/00-index/">ΦΩ Documentation Pack — Index</a></li>
+    <li><a href="./docs/standards/">ΦΩ Standards Pack</a></li>
+  </ul>
+</section>
 
-      <h2>Struttura consigliata (repo)</h2>
-      <ul class="muted">
-        <li><code>/docs</code> documentazione tecnica</li>
-        <li><code>/modules</code> moduli software (cartelle per modulo)</li>
-        <li><code>/specs</code> specifiche, schemi, standard</li>
-        <li><code>/assets</code> loghi, diagrammi, risorse</li>
-      </ul>
-    </section>
+<footer style="margin-top:28px;border-top:1px solid #ddd;padding-top:14px">
+  <small class="muted">HERMETICUM B.C.E. — Technology Hub (Pages)</small>
+</footer>
 
-    <section style="margin-top:14px;" class="card">
-      <h2>Link rapidi</h2>
-      <ul>
-        <li><a href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/">Hermeticum B.C.E. — Services (Hub)</a></li>
-        <li><a href="https://github.com/manuelcoletta1-source/hermeticum-bce-technology">GitHub Repository: hermeticum-bce-technology</a></li>
-      </ul>
-      <p class="muted">
-        Nota: per far sparire il <strong>404</strong>, GitHub Pages deve essere attivo su <code>main</code> + <code>/(root)</code> e questo file deve stare in root.
-      </p>
-    </section>
-  </main>
-
-  <footer class="muted">
-    <div style="max-width:980px; margin:0 auto; padding: 18px 20px;">
-      © Hermeticum B.C.E. — Technology · Public entry point
-    </div>
-  </footer>
 </body>
 </html>
