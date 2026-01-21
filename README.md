@@ -159,3 +159,21 @@ Fondatore e autore: **Manuel Coletta**
 Questo repository è parte integrante del  
 **CORPUS ESOTEROLOGIA ERMETICA**  
 e dell’infrastruttura **Hermeticum B.C.E.**.
+---
+
+## ΦΩ — Documentation Pack
+
+La documentazione **ΦΩ** è pubblicata come parte del nodo Technology ed è accessibile
+tramite GitHub Pages.
+
+### Accesso pubblico
+👉 https://manuelcoletta1-source.github.io/Hermeticum-B.C.E.-Technology/docs/phi-omega/00-index/
+
+### Contenuti
+- **Standards** — STANAG–ΦΩ–001
+- **Validation** — Scheda ufficiale TRL 9 ΦΩ
+- **Papers** — documenti teorici e concettuali
+- **Reactor (archivio)** — documentazione tecnica storicizzata
+
+> Questo materiale costituisce evidenza tecnica e documentale
+> all’interno dell’ecosistema Hermeticum B.C.E.
