@@ -1,215 +1,96 @@
-# Hermeticum B.C.E. — Technology
-
-**Hermeticum B.C.E.** (*Blindata · Computabile · Evolutiva*)  
-Questo repository costituisce il **nodo tecnologico e documentale**
-dell’ecosistema **Hermeticum B.C.E.**.
-
-Qui risiedono:
-- implementazioni tecniche
-- documentazione strutturale
-- standard, framework e evidenze
-- materiali di validazione e esposizione
-
-Il nodo **Technology** è progettato per essere:
-- verificabile
-- auditabile
-- compatibile con contesti UE / istituzionali
-- separato dal portale HUB (Services)
-
----
-
-## Stato
-
-🟢 **ATTIVO — Nodo tecnologico e documentale**
-
-- Allineato a: **Services v1.0-portal-audit**
-- Versionamento gestito via **GitJoker**
-- Accesso pubblico tramite GitHub Pages
-
----
-
-## Ruolo nell’ecosistema B.C.E.
-
-- **Services** → HUB di indicizzazione (non esecutivo)
-- **Technology** → **fonte tecnica e normativa**
-- **GitJoker-C2** → esecuzione, prova e versionamento
-- **AI Joker-C2** → decisione cognitiva (fuori banda Git)
-
-Technology:
-✔️ implementa  
-✔️ documenta  
-✔️ standardizza  
-✔️ rende opponibile  
-
----
-
-## Accesso pubblico (GitHub Pages)
-
-https://manuelcoletta1-source.github.io/Hermeticum-B.C.E.-Technology/
-
----
-
-## Contenuti principali
-
-### 1. Software & Moduli
-Questo repository può includere:
-- codice sorgente
-- prototipi
-- architetture computabili
-- componenti sperimentali
-
-*(Il codice esecutivo resta separato dai nodi HUB e Registry.)*
-
----
-
-### 2. Documentazione ΦΩ
-
-La documentazione ΦΩ è pubblicata come **pacchetto strutturato**
-e accessibile pubblicamente.
-
-**Indice pubblico:**
-https://manuelcoletta1-source.github.io/Hermeticum-B.C.E.-Technology/docs/phi-omega/00-index/
-
-Include:
-- standard
-- validazioni
-- paper teorici
-- documentazione tecnica (archivio)
-
----
-
-### 3. Standards & Frameworks
-
-I seguenti documenti costituiscono **baseline normative e tecniche**:
-
-- **STANAG–ΦΩ–001**  
-  Framework tecnico-operativo — Phase 1  
-  Decision accountability, HRR–DGV–LTA, mapping UE / NIS2 / CER
-
-- **STANDARD UE–ΦΩ–001**  
-  Standard normativo  
-  Paradigma della misura, opponibilità, validità simbolica
-
-- **ΦΩ Fase 1 — ONLY**  
-  One-pager esecutivo  
-  Documento di esposizione e adozione
-
-Tutti i documenti sono ospitati sotto:
----
-
-## Governance & Versionamento
-
-- Versionamento tramite **GitJoker**
-- Ogni variazione significativa:
-  - commit dedicato
-  - aggiornamento documentazione
-  - eventuale release
-
-Le release documentali:
-- fissano uno stato
-- non vengono mai riscritte
-- restano citabili e auditabili
-
----
-
-## Relazione con Services
-
-- Technology **non è HUB**
-- Services **non ospita documenti tecnici**
-- Services **linka** Technology come fonte canonica
-
-Questa separazione è **voluta** e **vincolante**.
-
----
-
-## Autore
-
-**Manuel Coletta**  
-Fondatore — Hermeticum B.C.E.
-
-📧 manuelcoletta1@gmil.com  
-📞 +39 351 572 4982  
-
----
-
-© Hermeticum B.C.E. — Nodo Technology
-
 # HERMETICUM B.C.E. — Technology
 
-Questo repository documenta e coordina lo **stack tecnologico** dell’ecosistema **HERMETICUM B.C.E.**  
-Qui vivono i **moduli software**, le **specifiche operative** e i **collegamenti ai repository esecutivi**.
+**HERMETICUM B.C.E.** (*Blindata · Computabile · Evolutiva*)  
+Questo repository costituisce il **Technology Hub** dell’ecosistema **HERMETICUM B.C.E.**.
 
-👉 Questo repo è **Technology Hub**: descrive, collega, governa.  
-👉 Il **Portale pubblico** è `hermeticum-bce`.  
-👉 I **Servizi** sono in `hermeticum-bce-services`.
+La funzione di questo nodo è **tecnica e normativa**, non di portale:
+- documenta lo stack tecnologico
+- collega i repository esecutivi
+- definisce standard, regole e governance
+- rende i moduli **verificabili e opponibili**
 
----
-
-## 🎯 Obiettivo
-
-- Presentare in modo **unitario e comprensibile** la tecnologia HERMETICUM B.C.E.
-- Separare **architettura e semantica** (qui) da **codice esecutivo** (nei singoli repo)
-- Consentire a **GitJoker** di operare con percorsi chiari e stabili
+👉 Il **Portale pubblico** è `hermeticum-bce`  
+👉 I **Servizi** sono in `hermeticum-bce-services`
 
 ---
 
-## 🧠 Principio Chiave
+## 🎯 Obiettivo del Repository
 
-**IPR = radice identitaria**  
-**Technology = capacità operativa**
+- Presentare in modo **unitario e leggibile** la tecnologia HERMETICUM B.C.E.
+- Separare **descrizione architetturale** (qui) da **codice esecutivo** (nei singoli repo)
+- Consentire a **GitJoker** di operare con percorsi chiari, stabili e auditabili
+- Garantire compatibilità con **contesti UE / istituzionali**
 
-Ogni modulo:
+Questo repository **non è un HUB di navigazione**, ma una **fonte tecnica canonica**.
+
+---
+
+## 🧠 Principio Fondante
+
+- **IPR** = radice identitaria e semantica  
+- **Technology** = capacità operativa computabile  
+- **Services** = indicizzazione e accesso  
+- **GitJoker-C2** = orchestrazione, audit, versionamento
+
+Ogni modulo tecnologico:
+- è collegabile all’IPR
 - è tracciabile
 - è opponibile
-- è collegabile all’IPR
+- ha un repository esecutivo dedicato
 
 ---
 
-## 🧩 Stack Tecnologico (moduli)
+## 🧩 Stack Tecnologico (Moduli)
 
-### 1. GitJoker-C2
-**Funzione:** coordinamento, controllo e automazione  
-**Repo:**  
+### 1. UNEBDO — Unified Evidentiary Node
+**Funzione:** motore di prova giuridico-tecnica  
+- manifest canonicalizzati
+- hash-chain (SHA-512)
+- firma crittografica (Ed25519)
+- proof verificabili offline
+
+🔗 Software & vetrina:  
+https://manuelcoletta1-source.github.io/unebdo/
+
+---
+
+### 2. OPC — Opponibility Policy Controller (STRONG)
+**Funzione:** policy computabile **fail-closed**  
+- verifica hash e firma
+- decide ALLOW / DENY
+- produce report di audit
+
+🔗 Documentazione pubblica:  
+https://manuelcoletta1-source.github.io/opc/
+
+---
+
+### 3. GitJoker-C2
+**Funzione:** orchestrazione tecnica e audit automatico  
+- CI / enforcement
+- versionamento
+- controllo coerenza ecosistema
+
+🔗 Repository:  
 https://github.com/manuelcoletta1-source/gitjoker-c2
 
 ---
 
-### 2. UNEBDO
-**Funzione:** dispositivo giuridico-tecnico di opponibilità e tracciabilità  
-**Stato:** documentale / in sviluppo  
-**Repo:** _(da collegare)_
+### 4. MetaExchange *(planned)*
+**Funzione:** interoperabilità e correlazione dati  
+**Stato:** progettuale
 
 ---
 
-### 3. OPC
-**Funzione:** policy computabile e controllo di validità  
-**Stato:** concettuale / architetturale  
-**Repo:** _(da collegare)_
-
----
-
-### 4. MetaExchange
-**Funzione:** scambio, correlazione e interoperabilità dei dati  
-**Stato:** progettuale  
-**Repo:** _(da collegare)_
-
----
-
-### 5. NeuroLoop
+### 5. NeuroLoop *(planned)*
 **Funzione:** ciclo decisionale e feedback computabile  
-**Stato:** progettuale  
-**Repo:** _(da collegare)_
+**Stato:** progettuale
 
 ---
 
-### 6. Io-Space
+### 6. Io-Space *(planned)*
 **Funzione:** spazio operativo e interfaccia  
-**Stato:** progettuale  
-**Repo:** _(da collegare)_
-
----
-
-## 🗂️ Struttura Consigliata del Repo
+**Stato:** progettuale
 
 ---
 
@@ -217,15 +98,30 @@ https://github.com/manuelcoletta1-source/gitjoker-c2
 
 - **1 modulo = 1 funzione chiara**
 - **1 modulo = 1 repository esecutivo**
-- Nessun codice “misto” nel portale
-- Naming stabile (no varianti semantiche)
+- Nessun codice “misto” nel Technology Hub
+- Naming stabile e non ambiguo
+- Ogni variazione significativa:
+  - commit dedicato
+  - documentazione aggiornata
+  - auditabilità garantita
+
+---
+
+## 🗂️ Ruolo rispetto agli altri nodi
+
+- **Technology** → fonte tecnica e normativa
+- **Services** → indicizzazione e accesso
+- **Portale (hermeticum-bce)** → entry point pubblico
+- **Registry / Verify** → prova e ancoraggi
+
+Questa separazione è **voluta, strutturale e vincolante**.
 
 ---
 
 ## 📌 Stato
 
-🟡 **IN STRUTTURAZIONE**  
-Hub tecnologico in allineamento con Portale e Services.
+🟢 **ATTIVO — Technology Hub operativo**  
+Stack definito · moduli attivi collegati · governance stabilita
 
 ---
 
