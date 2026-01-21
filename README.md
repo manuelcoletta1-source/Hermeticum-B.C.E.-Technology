@@ -1,179 +1,135 @@
 # Hermeticum B.C.E. — Technology
 
-**Hermeticum B.C.E.** (*Blindata · Computabile · Evolutiva*) è un’infrastruttura tecnologica
-orientata alla costruzione di **sistemi digitali avanzati**, fondati su:
+**Hermeticum B.C.E.** (*Blindata · Computabile · Evolutiva*)  
+Questo repository costituisce il **nodo tecnologico e documentale**
+dell’ecosistema **Hermeticum B.C.E.**.
 
-- identità verificabili
-- opponibilità tecnica e giuridica
-- tracciabilità crittografica
-- auditabilità sistemica
-- governance computabile
+Qui risiedono:
+- implementazioni tecniche
+- documentazione strutturale
+- standard, framework e evidenze
+- materiali di validazione e esposizione
 
-Questo repository rappresenta il **nucleo tecnologico** dell’ecosistema **Hermeticum B.C.E.**  
-Contiene **software, moduli computazionali e componenti C2**, organizzati in modo modulare,
-auditabile e compatibile con contesti **UE / istituzionali / critici**.
-
----
-
-## Stato del repository
-
-🟢 **ATTIVO**  
-Repository tecnologico ufficiale  
-Struttura modulare in evoluzione controllata
+Il nodo **Technology** è progettato per essere:
+- verificabile
+- auditabile
+- compatibile con contesti UE / istituzionali
+- separato dal portale HUB (Services)
 
 ---
 
-## Ruolo del repository
+## Stato
 
-**HERMETICUM B.C.E. — TECHNOLOGY** è la **fabbrica software** dell’ecosistema.
+🟢 **ATTIVO — Nodo tecnologico e documentale**
 
-- Qui risiede il **codice**
-- Qui risiedono i **moduli computazionali**
-- Qui risiedono i **motori di controllo e governance**
-
-La documentazione descrittiva e l’esposizione pubblica sono gestite nel repository separato:
-
-➡ **Hermeticum B.C.E. — Services**  
-https://manuelcoletta1-source.github.io/hermeticum-bce-services/
+- Allineato a: **Services v1.0-portal-audit**
+- Versionamento gestito via **GitJoker**
+- Accesso pubblico tramite GitHub Pages
 
 ---
 
-## Architettura software
+## Ruolo nell’ecosistema B.C.E.
 
-I software sono organizzati in **moduli indipendenti ma cooperanti**,
-ognuno con responsabilità chiara e interfacce definite.
+- **Services** → HUB di indicizzazione (non esecutivo)
+- **Technology** → **fonte tecnica e normativa**
+- **GitJoker-C2** → esecuzione, prova e versionamento
+- **AI Joker-C2** → decisione cognitiva (fuori banda Git)
 
----
-
-## Moduli software
-
-### 🔐 IPR — Identity Primary Record
-Sistema di identità digitale avanzata.
-Radice fiduciaria dell’ecosistema Hermeticum B.C.E.
-
-Funzioni principali:
-- identità verificabili basate su dati reali
-- ancoraggi crittografici multi-ledger
-- prova temporale opponibile
-- persistenza e auditabilità nel tempo
+Technology:
+✔️ implementa  
+✔️ documenta  
+✔️ standardizza  
+✔️ rende opponibile  
 
 ---
 
-### ⚖️ UNEBDO — Unità Normativa Esecutiva Blindata Digitale Opponibile
-Framework giuridico-computabile per:
-- validazione normativa
-- esecuzione opponibile
-- integrazione tra diritto e codice
-- audit regolamentare
+## Accesso pubblico (GitHub Pages)
+
+https://manuelcoletta1-source.github.io/Hermeticum-B.C.E.-Technology/
 
 ---
 
-### 🔁 OPC — Opponible Policy Core
-Motore di policy computabili e opponibili:
-- regole verificabili
-- enforcement tracciabile
-- governance by-design
-- compatibilità UE-oriented
+## Contenuti principali
+
+### 1. Software & Moduli
+Questo repository può includere:
+- codice sorgente
+- prototipi
+- architetture computabili
+- componenti sperimentali
+
+*(Il codice esecutivo resta separato dai nodi HUB e Registry.)*
 
 ---
 
-### 🌐 MetaExchange
-Livello di interscambio dati e valore:
-- interoperabilità multi-dominio
-- tracciabilità delle transazioni
-- proof-of-existence
-- proof-of-intent
+### 2. Documentazione ΦΩ
+
+La documentazione ΦΩ è pubblicata come **pacchetto strutturato**
+e accessibile pubblicamente.
+
+**Indice pubblico:**
+https://manuelcoletta1-source.github.io/Hermeticum-B.C.E.-Technology/docs/phi-omega/00-index/
+
+Include:
+- standard
+- validazioni
+- paper teorici
+- documentazione tecnica (archivio)
 
 ---
 
-### 🛰️ IoSpace
-Spazio digitale operativo per:
-- identità
-- servizi
-- ambienti computabili
-- interazione sicura tra moduli
+### 3. Standards & Frameworks
+
+I seguenti documenti costituiscono **baseline normative e tecniche**:
+
+- **STANAG–ΦΩ–001**  
+  Framework tecnico-operativo — Phase 1  
+  Decision accountability, HRR–DGV–LTA, mapping UE / NIS2 / CER
+
+- **STANDARD UE–ΦΩ–001**  
+  Standard normativo  
+  Paradigma della misura, opponibilità, validità simbolica
+
+- **ΦΩ Fase 1 — ONLY**  
+  One-pager esecutivo  
+  Documento di esposizione e adozione
+
+Tutti i documenti sono ospitati sotto:
+---
+
+## Governance & Versionamento
+
+- Versionamento tramite **GitJoker**
+- Ogni variazione significativa:
+  - commit dedicato
+  - aggiornamento documentazione
+  - eventuale release
+
+Le release documentali:
+- fissano uno stato
+- non vengono mai riscritte
+- restano citabili e auditabili
 
 ---
 
-### 🧬 NeuroLoop
-Modulo di feedback cognitivo e sistemico:
-- analisi ciclica dei processi
-- apprendimento operativo
-- ottimizzazione decisionale
-- controllo di coerenza evolutiva
+## Relazione con Services
+
+- Technology **non è HUB**
+- Services **non ospita documenti tecnici**
+- Services **linka** Technology come fonte canonica
+
+Questa separazione è **voluta** e **vincolante**.
 
 ---
 
-### 🧠 AI JOKER — C2 Engine
-Motore di **Command & Control cognitivo**:
-- orchestrazione dei moduli Hermeticum B.C.E.
-- supporto decisionale avanzato
-- verifica di coerenza sistemica
-- audit logico, operativo e strategico
+## Autore
+
+**Manuel Coletta**  
+Fondatore — Hermeticum B.C.E.
+
+📧 manuelcoletta1@gmil.com  
+📞 +39 351 572 4982  
 
 ---
 
-### 🌍 CyberGlobal
-Layer di governance cyber-globale:
-- coordinamento multi-dominio
-- integrazione tra identità, policy e C2
-- regia sovra-architetturale in scenari critici
-
----
-
-## Principi architetturali
-
-- **Decisione → Costo → Traccia → Tempo**
-- Audit-by-design
-- Fail-closed
-- Modularità evolutiva
-- Tracciabilità nativa
-- Orientamento UE e istituzionale
-
----
-
-## Destinazione d’uso
-
-- infrastrutture pubbliche e private
-- progetti UE / Horizon Europe
-- sistemi di identità digitale
-- cyber-governance istituzionale
-- AI critiche e sistemi C2
-- proof-of-existence / proof-of-intent
-
----
-
-## Licenza e stato
-
-Repository tecnologico e progettuale.  
-Distribuzione e riuso soggetti a **Licenza Hermeticum B.C.E.**  
-**Tutti i diritti riservati.**
-
----
-
-## Autore e fondazione
-
-**Hermeticum B.C.E. S.r.l.**  
-Fondatore e autore: **Manuel Coletta**
-
-Questo repository è parte integrante del  
-**CORPUS ESOTEROLOGIA ERMETICA**  
-e dell’infrastruttura **Hermeticum B.C.E.**.
----
-
-## ΦΩ — Documentation Pack
-
-La documentazione **ΦΩ** è pubblicata come parte del nodo Technology ed è accessibile
-tramite GitHub Pages.
-
-### Accesso pubblico
-👉 https://manuelcoletta1-source.github.io/Hermeticum-B.C.E.-Technology/docs/phi-omega/00-index/
-
-### Contenuti
-- **Standards** — STANAG–ΦΩ–001
-- **Validation** — Scheda ufficiale TRL 9 ΦΩ
-- **Papers** — documenti teorici e concettuali
-- **Reactor (archivio)** — documentazione tecnica storicizzata
-
-> Questo materiale costituisce evidenza tecnica e documentale
-> all’interno dell’ecosistema Hermeticum B.C.E.
+© Hermeticum B.C.E. — Nodo Technology
