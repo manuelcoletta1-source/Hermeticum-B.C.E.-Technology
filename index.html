@@ -1,77 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HERMETICUM B.C.E. — Technology</title>
+  <meta charset="utf-8">
+  <title>Hermeticum B.C.E. — Technology</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Repository tecnologico Hermeticum B.C.E. — architetture, moduli e sistemi computabili.">
+
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:980px;margin:40px auto;padding:0 16px;line-height:1.5}
-    header{border-bottom:1px solid #ddd;padding-bottom:16px;margin-bottom:24px}
-    nav a{margin-right:12px}
-    .card{border:1px solid #ddd;border-radius:14px;padding:16px;margin:14px 0}
-    code{background:#f5f5f5;padding:2px 6px;border-radius:6px}
-    .muted{color:#666}
-    ul{padding-left:18px}
+    :root { color-scheme: dark; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #0b0c10;
+      color: #e8e8e8;
+      line-height: 1.6;
+    }
+    header, main, footer {
+      max-width: 980px;
+      margin: auto;
+      padding: 32px 20px;
+    }
+    .card {
+      border: 1px solid #24262b;
+      border-radius: 16px;
+      padding: 20px;
+      background: #0f1117;
+      margin-bottom: 24px;
+    }
+    .muted { color: #9aa0a6; }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>HERMETICUM B.C.E. — Technology</h1>
-  <p class="muted">
-    Nodo tecnico e documentale: standard, framework, evidenze e collegamenti ai repository esecutivi.
-    Questo repo è fonte canonica (auditabile).
-  </p>
-  <nav>
-    <a href="#packs">Packs</a>
-    <a href="#modules">Moduli</a>
-    <a href="#docs">Docs</a>
-    <a href="https://manuelcoletta1-source.github.io/hermeticum-bce/">Portal</a>
-    <a href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/">Services</a>
-  </nav>
+  <h1>Hermeticum B.C.E. — Technology</h1>
+  <p class="muted">Repository tecnologico di riferimento</p>
 </header>
 
-<section class="card" id="packs">
-  <h2>Packs (Canonici)</h2>
-  <p>Documenti pubblicabili e auditabili (UE-safe) collegati all’ecosistema.</p>
-  <ul>
-    <li>
-      <b>Legal Pack</b> — indice:
-      <a href="./docs/legal/00-index/">docs/legal/00-index</a>
-      · PDF:
-      <a href="./assets/pdf/OGGETTO-SOCIALE.pdf">OGGETTO-SOCIALE.pdf</a>
-    </li>
-    <li>
-      <b>IPR Service Pack</b> — indice:
-      <a href="./docs/ipr/00-index/">docs/ipr/00-index</a>
-      · PDF:
-      <a href="./assets/pdf/IPR-SERVICE-1.0.pdf">IPR-SERVICE-1.0.pdf</a>
-    </li>
-  </ul>
-  <p class="muted">
-    Nota: i documenti sono presentati come corpus tecnico-documentale; l’operatività esecutiva vive nei repo dedicati.
-  </p>
-</section>
+<main>
 
-<section class="card" id="modules">
-  <h2>Moduli (Esecutivi)</h2>
-  <ul>
-    <li><b>UNEBDO</b> — proof engine: <a href="https://manuelcoletta1-source.github.io/unebdo/">unebdo</a></li>
-    <li><b>OPC</b> — policy engine: <a href="https://manuelcoletta1-source.github.io/opc/">opc</a></li>
-    <li><b>GitJoker-C2</b> — orchestrazione/audit: <a href="https://manuelcoletta1-source.github.io/gitjoker-c2/">gitjoker-c2</a></li>
-  </ul>
-</section>
+  <section class="card">
+    <h2>Funzione</h2>
+    <p>
+      Questo spazio documenta le architetture e i moduli
+      computabili dell’ecosistema Hermeticum B.C.E.
+    </p>
+    <p>
+      Non è un’interfaccia utente.
+      È una superficie tecnica verificabile.
+    </p>
+  </section>
 
-<section class="card" id="docs">
-  <h2>Documentazione ΦΩ</h2>
-  <ul>
-    <li><a href="./docs/phi-omega/00-index/">ΦΩ Documentation Pack — Index</a></li>
-    <li><a href="./docs/standards/">ΦΩ Standards Pack</a></li>
-  </ul>
-</section>
+  <section class="card">
+    <h3>Architettura Modulare</h3>
+    <ul>
+      <li>IPR Core</li>
+      <li>AI Joker / C2</li>
+      <li>UNEBDO</li>
+      <li>OPC</li>
+      <li>MetaExchange</li>
+      <li>IoSpace / NeuroLoop</li>
+    </ul>
+  </section>
 
-<footer style="margin-top:28px;border-top:1px solid #ddd;padding-top:14px">
-  <small class="muted">HERMETICUM B.C.E. — Technology Hub (Pages)</small>
+  <section class="card">
+    <h3>Principio Tecnico</h3>
+    <p>
+      Ogni modulo è progettato per essere:
+    </p>
+    <ul>
+      <li>verificabile</li>
+      <li>versionabile</li>
+      <li>opponibile</li>
+      <li>evolutivo</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="muted">
+  © Hermeticum B.C.E. — Technology Repository
 </footer>
 
 </body>
