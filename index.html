@@ -1,36 +1,22 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Hermeticum B.C.E. — Technology</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Repository tecnologico Hermeticum B.C.E. — architetture, moduli e sistemi computabili.">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Repository tecnologico Hermeticum B.C.E.: architetture, moduli e sistemi computabili." />
   <style>
     :root { color-scheme: dark; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: #0b0c10;
-      color: #e8e8e8;
-      line-height: 1.6;
-    }
-    header, main, footer {
-      max-width: 980px;
-      margin: auto;
-      padding: 32px 20px;
-    }
-    .card {
-      border: 1px solid #24262b;
-      border-radius: 16px;
-      padding: 20px;
-      background: #0f1117;
-      margin-bottom: 24px;
-    }
-    .muted { color: #9aa0a6; }
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b0c10;color:#e8e8e8;line-height:1.6}
+    header,main,footer{max-width:980px;margin:0 auto;padding:28px 18px}
+    .card{border:1px solid #24262b;border-radius:16px;padding:18px;background:#0f1117;margin-bottom:14px}
+    .muted{color:#9aa2aa}
+    a{color:#9ecbff;text-decoration:none}
+    a:hover{text-decoration:underline}
+    ul{margin:10px 0 0 18px;color:#cfd2d6}
+    li{margin:6px 0}
   </style>
 </head>
-
 <body>
 
 <header>
@@ -39,48 +25,47 @@
 </header>
 
 <main>
-
   <section class="card">
     <h2>Funzione</h2>
-    <p>
-      Questo spazio documenta le architetture e i moduli
-      computabili dell’ecosistema Hermeticum B.C.E.
-    </p>
-    <p>
-      Non è un’interfaccia utente.
-      È una superficie tecnica verificabile.
-    </p>
+    <p>Questo spazio documenta architetture e moduli computabili dell’ecosistema Hermeticum B.C.E. Non è un’interfaccia utente: è una superficie tecnica verificabile.</p>
   </section>
 
   <section class="card">
-    <h3>Architettura Modulare</h3>
+    <h2>Principi</h2>
+    <ul>
+      <li>Tracciabilità e versioning</li>
+      <li>Audit-by-design</li>
+      <li>Fail-closed logic</li>
+      <li>Modularità evolutiva</li>
+      <li>Orientamento UE (compliance by default)</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Moduli (overview)</h2>
     <ul>
       <li>IPR Core</li>
       <li>AI Joker / C2</li>
       <li>UNEBDO</li>
-      <li>OPC</li>
+      <li>OPC — Opponible Policy Core</li>
       <li>MetaExchange</li>
       <li>IoSpace / NeuroLoop</li>
     </ul>
   </section>
 
   <section class="card">
-    <h3>Principio Tecnico</h3>
-    <p>
-      Ogni modulo è progettato per essere:
-    </p>
+    <h2>Collegamenti</h2>
+    <p class="muted">Accesso ai repository principali.</p>
     <ul>
-      <li>verificabile</li>
-      <li>versionabile</li>
-      <li>opponibile</li>
-      <li>evolutivo</li>
+      <li><a href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/" target="_blank" rel="noopener">Hermeticum B.C.E. — Services</a></li>
+      <li><a href="https://manuelcoletta1-source.github.io/gitjoker-c2/" target="_blank" rel="noopener">GitJoker-C2</a></li>
+      <li><a href="https://manuelcoletta1-source.github.io/ue-ipr-registry/" target="_blank" rel="noopener">UE IPR Registry</a></li>
     </ul>
   </section>
-
 </main>
 
 <footer class="muted">
-  © Hermeticum B.C.E. — Technology Repository
+  © 2026 — HERMETICUM B.C.E. · Technology
 </footer>
 
 </body>
