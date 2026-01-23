@@ -1,131 +1,82 @@
-# HERMETICUM B.C.E. — Technology
+# Hermeticum B.C.E. — Technology
 
-**HERMETICUM B.C.E.** (*Blindata · Computabile · Evolutiva*)  
-Questo repository costituisce il **Technology Hub** dell’ecosistema **HERMETICUM B.C.E.**.
+**Hermeticum B.C.E.**  
+(*Blindata · Computabile · Evolutiva*)
 
-La funzione di questo nodo è **tecnica e normativa**, non di portale:
-- documenta lo stack tecnologico
-- collega i repository esecutivi
-- definisce standard, regole e governance
-- rende i moduli **verificabili e opponibili**
+Questo repository documenta la **base tecnologica**
+dell’ecosistema **Hermeticum B.C.E.**.
 
-👉 Il **Portale pubblico** è `hermeticum-bce`  
-👉 I **Servizi** sono in `hermeticum-bce-services`
+Non è un prodotto.
+Non è un servizio commerciale.
+È un **deposito tecnico opponibile**.
 
 ---
 
-## 🎯 Obiettivo del Repository
+## Scopo
 
-- Presentare in modo **unitario e leggibile** la tecnologia HERMETICUM B.C.E.
-- Separare **descrizione architetturale** (qui) da **codice esecutivo** (nei singoli repo)
-- Consentire a **GitJoker** di operare con percorsi chiari, stabili e auditabili
-- Garantire compatibilità con **contesti UE / istituzionali**
+Questo repository ha come funzione:
 
-Questo repository **non è un HUB di navigazione**, ma una **fonte tecnica canonica**.
+- documentare i **software**
+- descrivere le **architetture**
+- rendere verificabili i **moduli computabili**
+- mantenere **continuità tecnica nel tempo**
 
----
-
-## 🧠 Principio Fondante
-
-- **IPR** = radice identitaria e semantica  
-- **Technology** = capacità operativa computabile  
-- **Services** = indicizzazione e accesso  
-- **GitJoker-C2** = orchestrazione, audit, versionamento
-
-Ogni modulo tecnologico:
-- è collegabile all’IPR
-- è tracciabile
-- è opponibile
-- ha un repository esecutivo dedicato
+Qui si **espone la macchina**, non l’interfaccia.
 
 ---
 
-## 🧩 Stack Tecnologico (Moduli)
+## Principi Tecnici
 
-### 1. UNEBDO — Unified Evidentiary Node
-**Funzione:** motore di prova giuridico-tecnica  
-- manifest canonicalizzati
-- hash-chain (SHA-512)
-- firma crittografica (Ed25519)
-- proof verificabili offline
+La tecnologia Hermeticum B.C.E. è progettata secondo criteri di:
 
-🔗 Software & vetrina:  
-https://manuelcoletta1-source.github.io/unebdo/
+- tracciabilità crittografica
+- audit-by-design
+- fail-closed logic
+- modularità evolutiva
+- compatibilità UE-oriented
 
----
-
-### 2. OPC — Opponibility Policy Controller (STRONG)
-**Funzione:** policy computabile **fail-closed**  
-- verifica hash e firma
-- decide ALLOW / DENY
-- produce report di audit
-
-🔗 Documentazione pubblica:  
-https://manuelcoletta1-source.github.io/opc/
+Ogni modulo è:
+- separabile
+- versionabile
+- opponibile
 
 ---
 
-### 3. GitJoker-C2
-**Funzione:** orchestrazione tecnica e audit automatico  
-- CI / enforcement
-- versionamento
-- controllo coerenza ecosistema
+## Moduli Principali
 
-🔗 Repository:  
-https://github.com/manuelcoletta1-source/gitjoker-c2
+- **IPR Core**  
+  Gestione delle ancore di identità primaria.
 
----
+- **AI Joker / C2**  
+  Sistema di controllo, orchestrazione e continuità operativa.
 
-### 4. MetaExchange *(planned)*
-**Funzione:** interoperabilità e correlazione dati  
-**Stato:** progettuale
+- **UNEBDO**  
+  Layer di opponibilità tecnica e giuridica.
 
----
+- **OPC — Opponible Policy Core**  
+  Policy computabili e verificabili.
 
-### 5. NeuroLoop *(planned)*
-**Funzione:** ciclo decisionale e feedback computabile  
-**Stato:** progettuale
+- **MetaExchange**  
+  Scambio di valore, dati e tracce.
 
----
+- **IoSpace / NeuroLoop**  
+  Spazi operativi e feedback evolutivo.
 
-### 6. Io-Space *(planned)*
-**Funzione:** spazio operativo e interfaccia  
-**Stato:** progettuale
+Ogni modulo può avere repository dedicati collegati a questo nodo.
 
 ---
 
-## 📐 Regole di Governance Tecnologica
+## Stato del Repository
 
-- **1 modulo = 1 funzione chiara**
-- **1 modulo = 1 repository esecutivo**
-- Nessun codice “misto” nel Technology Hub
-- Naming stabile e non ambiguo
-- Ogni variazione significativa:
-  - commit dedicato
-  - documentazione aggiornata
-  - auditabilità garantita
+🟢 **ATTIVO**  
+Repository tecnologico di riferimento.
 
 ---
 
-## 🗂️ Ruolo rispetto agli altri nodi
+## Nota
 
-- **Technology** → fonte tecnica e normativa
-- **Services** → indicizzazione e accesso
-- **Portale (hermeticum-bce)** → entry point pubblico
-- **Registry / Verify** → prova e ancoraggi
+Questo repository **non spiega tutto**.  
+Espone ciò che è **necessario verificare**.
 
-Questa separazione è **voluta, strutturale e vincolante**.
-
----
-
-## 📌 Stato
-
-🟢 **ATTIVO — Technology Hub operativo**  
-Stack definito · moduli attivi collegati · governance stabilita
-
----
-
-## © Autore e Fondatore
-
-**Manuel Coletta**  
-HERMETICUM B.C.E.
+Hermeticum B.C.E. non è magia.  
+È **ingegneria tracciabile nel tempo**.
