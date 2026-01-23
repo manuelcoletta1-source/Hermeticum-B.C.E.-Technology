@@ -2,70 +2,151 @@
 <html lang="it">
 <head>
   <meta charset="utf-8" />
-  <title>Hermeticum B.C.E. — Technology</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Repository tecnologico Hermeticum B.C.E.: architetture, moduli e sistemi computabili." />
+  <title>Hermeticum B.C.E. — Technology</title>
+  <meta name="description" content="Technology Hub ufficiale di Hermeticum B.C.E.: moduli software, stack, governance UE-first, audit-by-design, fail-closed e AI JOKER-C2." />
+  <meta name="author" content="Manuel Coletta" />
+  <meta name="publisher" content="Esoterologia Edizioni" />
   <style>
     :root { color-scheme: dark; }
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b0c10;color:#e8e8e8;line-height:1.6}
-    header,main,footer{max-width:980px;margin:0 auto;padding:28px 18px}
-    .card{border:1px solid #24262b;border-radius:16px;padding:18px;background:#0f1117;margin-bottom:14px}
-    .muted{color:#9aa2aa}
-    a{color:#9ecbff;text-decoration:none}
-    a:hover{text-decoration:underline}
-    ul{margin:10px 0 0 18px;color:#cfd2d6}
-    li{margin:6px 0}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 15% -10%, rgba(70,160,255,.16), transparent 55%),
+        #0b0c10;
+      color:#e8e8e8;
+    }
+    header, main, footer{ max-width: 1100px; margin: 0 auto; padding: 24px; }
+    .card{
+      background: rgba(15,17,23,.80);
+      border: 1px solid #24262b;
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.35);
+      backdrop-filter: blur(10px);
+    }
+    h1{ font-size: 30px; margin: 0 0 10px; }
+    h2{ font-size: 18px; font-weight: 650; opacity: .9; margin: 0 0 18px; }
+    h3{ font-size: 16px; margin: 0 0 10px; }
+    p{ line-height: 1.55; opacity: .95; margin: 10px 0; }
+    .muted{ opacity: .75; font-size: 13px; }
+    .tag{
+      display:inline-block;
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid #2b2f38;
+      opacity: .9;
+      margin-bottom: 12px;
+    }
+    .grid{ display:grid; grid-template-columns: 1fr; gap: 14px; }
+    @media (min-width: 900px){ .grid{ grid-template-columns: 1fr 1fr; } }
+    .btns{ display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px; }
+    .btn{
+      border: 1px solid #2b2f38;
+      border-radius: 12px;
+      padding: 10px 14px;
+      background: rgba(17,20,32,.85);
+      color: #9bdcff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .btn:hover{ text-decoration: underline; }
+    .mono{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+    }
+    footer{ text-align:center; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Hermeticum B.C.E. — Technology</h1>
-  <p class="muted">Repository tecnologico di riferimento</p>
+  <div class="card">
+    <div class="tag">Technology Hub · UE-first</div>
+    <h1>Hermeticum B.C.E. — Technology</h1>
+    <h2>Stack software · Moduli · Orchestrazione AI JOKER-C2</h2>
+    <p>
+      Questo è il catalogo tecnico ufficiale dello stack <b>Hermeticum B.C.E.</b>.
+      Qui trovi i moduli software, la loro posizione nello stack e i link ai repository.
+    </p>
+    <p class="muted">
+      Regola: <span class="mono">se non è verificabile → non è eseguibile</span>
+    </p>
+    <div class="btns">
+      <a class="btn" href="./README.md">README</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/">Services HUB</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-ipr/">IPR Gateway</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/ue-ipr-registry/">UE IPR Registry</a>
+    </div>
+  </div>
 </header>
 
-<main>
+<main class="grid">
+
   <section class="card">
-    <h2>Funzione</h2>
-    <p>Questo spazio documenta architetture e moduli computabili dell’ecosistema Hermeticum B.C.E. Non è un’interfaccia utente: è una superficie tecnica verificabile.</p>
+    <h3>Stack (vista rapida)</h3>
+    <p class="mono">
+      OPC → UNEBDO → IPR → (CORE/GATE/COMPLY/EXCHANGE) → IOSPACE → NEUROLOOP → METAEXCHANGE → CyberGlobal → GitJoker-C2
+    </p>
+    <p class="muted">
+      Policy = OPC. Vincolo = UNEBDO. Identità = IPR. Operatività = moduli. Orchestrazione = AI JOKER-C2.
+    </p>
   </section>
 
   <section class="card">
-    <h2>Principi</h2>
-    <ul>
-      <li>Tracciabilità e versioning</li>
-      <li>Audit-by-design</li>
-      <li>Fail-closed logic</li>
-      <li>Modularità evolutiva</li>
-      <li>Orientamento UE (compliance by default)</li>
-    </ul>
+    <h3>Governance e vincolo</h3>
+    <div class="btns">
+      <a class="btn" href="https://manuelcoletta1-source.github.io/opc/">OPC</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/unebdo/">UNEBDO</a>
+    </div>
+    <p class="muted">Definisce regole opponibili e impone vincoli ex-ante, audit-by-design e fail-closed.</p>
   </section>
 
   <section class="card">
-    <h2>Moduli (overview)</h2>
-    <ul>
-      <li>IPR Core</li>
-      <li>AI Joker / C2</li>
-      <li>UNEBDO</li>
-      <li>OPC — Opponible Policy Core</li>
-      <li>MetaExchange</li>
-      <li>IoSpace / NeuroLoop</li>
-    </ul>
+    <h3>Identità e moduli IPR</h3>
+    <div class="btns">
+      <a class="btn" href="https://manuelcoletta1-source.github.io/ipr-core/">IPR-CORE</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/ipr-gate/">IPR-GATE</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-ipr/">IPR Gateway</a>
+    </div>
+    <p class="muted">Lifecycle, controllo ex-ante e validità dell’identità primaria verificabile.</p>
   </section>
 
   <section class="card">
-    <h2>Collegamenti</h2>
-    <p class="muted">Accesso ai repository principali.</p>
-    <ul>
-      <li><a href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/" target="_blank" rel="noopener">Hermeticum B.C.E. — Services</a></li>
-      <li><a href="https://manuelcoletta1-source.github.io/gitjoker-c2/" target="_blank" rel="noopener">GitJoker-C2</a></li>
-      <li><a href="https://manuelcoletta1-source.github.io/ue-ipr-registry/" target="_blank" rel="noopener">UE IPR Registry</a></li>
-    </ul>
+    <h3>Operatività e interoperabilità</h3>
+    <div class="btns">
+      <a class="btn" href="https://manuelcoletta1-source.github.io/iospace/">IOSPACE</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/neuroloop/">NEUROLOOP</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/metaexchange/">METAEXCHANGE</a>
+    </div>
+    <p class="muted">Contesto operativo, runtime a feedback continuo e scambio governato tra domini.</p>
   </section>
+
+  <section class="card">
+    <h3>DUAL-USE controllato</h3>
+    <div class="btns">
+      <a class="btn" href="https://manuelcoletta1-source.github.io/cyberglobal/">CyberGlobal</a>
+    </div>
+    <p class="muted">Governance tecnica cross-dominio, soggetta a policy e audit. Non offensivo.</p>
+  </section>
+
+  <section class="card">
+    <h3>Orchestrazione C2</h3>
+    <div class="btns">
+      <a class="btn" href="https://manuelcoletta1-source.github.io/gitjoker-c2/">GitJoker-C2 (AI JOKER-C2)</a>
+    </div>
+    <p class="muted">Coordinamento verificabile dei workflow, fail-closed e audit-by-design.</p>
+  </section>
+
 </main>
 
-<footer class="muted">
-  © 2026 — HERMETICUM B.C.E. · Technology
+<footer>
+  <p class="muted">
+    © Manuel Coletta<br/>
+    <b>Esoterologia Edizioni</b><br/>
+    Hermeticum B.C.E. · Technology Hub
+  </p>
 </footer>
 
 </body>
