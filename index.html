@@ -1,204 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Hermeticum B.C.E. — Technology</title>
-
-  <meta name="description" content="Technology Hub ufficiale di Hermeticum B.C.E.: stack software UE-first, moduli IPR, governance tecnica, audit-by-design e orchestrazione AI JOKER-C2." />
-  <meta name="author" content="Manuel Coletta" />
-  <meta name="publisher" content="Esoterologia Edizioni" />
-
-  <style>
-    :root { color-scheme: dark; }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background:
-        radial-gradient(1200px 600px at 20% -10%, rgba(90,140,255,.18), transparent 55%),
-        #0b0c10;
-      color: #e8e8e8;
-    }
-
-    header, main, footer {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-
-    .card {
-      background: rgba(15,17,23,.82);
-      border: 1px solid #24262b;
-      border-radius: 18px;
-      padding: 22px;
-      box-shadow: 0 12px 30px rgba(0,0,0,.35);
-      backdrop-filter: blur(10px);
-    }
-
-    h1 { font-size: 32px; margin: 0 0 10px; }
-    h2 { font-size: 18px; font-weight: 600; margin: 0 0 16px; opacity: .9; }
-    h3 { font-size: 16px; margin: 0 0 10px; }
-
-    p { line-height: 1.55; opacity: .95; }
-
-    .tag {
-      display: inline-block;
-      font-size: 12px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid #2b2f38;
-      opacity: .9;
-      margin-bottom: 12px;
-    }
-
-    .muted { opacity: .75; font-size: 13px; }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-    }
-
-    @media (min-width: 900px) {
-      .grid { grid-template-columns: 1fr 1fr; }
-    }
-
-    .btns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 14px;
-    }
-
-    .btn {
-      border: 1px solid #2b2f38;
-      border-radius: 12px;
-      padding: 10px 14px;
-      background: rgba(17,20,32,.9);
-      color: #9bdcff;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .btn:hover { text-decoration: underline; }
-
-    .mono {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
-    }
-
-    footer { text-align: center; }
-  </style>
+  <meta name="description" content="Repository tecnologico ufficiale: moduli, standard e pipeline verificabile. UE-first, audit-first, fail-closed."/>
+  <link rel="stylesheet" href="./assets/ui.css"/>
 </head>
-
 <body>
 
 <header>
-  <div class="card">
-    <div class="tag">Technology Hub · UE-first</div>
-    <h1>Hermeticum B.C.E. — Technology</h1>
-    <h2>Stack software · Governance tecnica · AI JOKER-C2</h2>
-
-    <p>
-      Questo è il <b>catalogo tecnologico ufficiale</b> di <b>Hermeticum B.C.E.</b>:
-      l’insieme dei moduli software che rendono possibile
-      <b>identità verificabile, operatività governata e audit-by-design</b>
-      in contesti europei e istituzionali.
-    </p>
-
-    <p class="muted">
-      Regola fondamentale:
-      <span class="mono">se non è verificabile → non è eseguibile</span>
-    </p>
-
-    <div class="btns">
-      <a class="btn" href="./README.md">README</a>
-      <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/">Services HUB</a>
-      <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-ipr/">IPR Gateway</a>
-      <a class="btn" href="https://manuelcoletta1-source.github.io/ue-ipr-registry/">UE IPR Registry</a>
-    </div>
+  <div class="wrap nav">
+    <a class="btn primary" href="./">Technology</a>
+    <a class="btn" href="#modules">Moduli</a>
+    <a class="btn" href="#standards">Standard</a>
+    <a class="btn" href="#pipeline">Pipeline</a>
+    <span class="spacer"></span>
+    <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-platform/">EU Gateway</a>
+    <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-b2b/">B2B</a>
+    <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-b2g/">B2G</a>
   </div>
 </header>
 
-<main class="grid">
+<div class="wrap">
 
-  <section class="card">
-    <h3>Architettura dello stack</h3>
-    <p class="mono">
-      OPC → UNEBDO → IPR → CORE · GATE · COMPLY · EXCHANGE →
-      IOSPACE → NEUROLOOP → METAEXCHANGE → CyberGlobal →
-      GitJoker-C2
+  <section class="box">
+    <h1>Hermeticum B.C.E. — Technology</h1>
+    <p>
+      Repository tecnologico ufficiale dell’infrastruttura Hermeticum B.C.E.
+      Qui trovi <b>moduli</b>, <b>standard operativi</b> e <b>pipeline verificabile</b>.
+      Nessun documento. Nessuna promessa automatica. Solo specifiche e componenti.
     </p>
-    <p class="muted">
-      Policy, vincolo, identità, contesto operativo, runtime dinamico,
-      interoperabilità e orchestrazione C2.
+    <p>
+      <span class="tag">UE-first</span>
+      <span class="tag">Audit-first</span>
+      <span class="tag">Fail-closed</span>
+      <span class="tag">Hash-only</span>
     </p>
-  </section>
-
-  <section class="card">
-    <h3>Governance e vincolo</h3>
-    <div class="btns">
-      <a class="btn" href="https://manuelcoletta1-source.github.io/opc/">OPC</a>
-      <a class="btn" href="https://manuelcoletta1-source.github.io/unebdo/">UNEBDO</a>
+    <div class="cta">
+      <a class="btn primary" href="./README.md">README</a>
+      <a class="btn" href="./MODULES.md">Modules</a>
+      <a class="btn" href="./STANDARDS.md">Standards</a>
+      <a class="btn" href="./PIPELINE.md">Pipeline</a>
     </div>
-    <p class="muted">
-      Policy opponibili e enforcement tecnico ex-ante.
-    </p>
   </section>
 
-  <section class="card">
-    <h3>Identità e moduli IPR</h3>
-    <div class="btns">
-      <a class="btn" href="https://manuelcoletta1-source.github.io/ipr-core/">IPR-CORE</a>
-      <a class="btn" href="https://manuelcoletta1-source.github.io/ipr-gate/">IPR-GATE</a>
-      <a class="btn" href="https://manuelcoletta1-source.github.io/ipr-comply/">IPR-COMPLY</a>
-      <a class="btn" href="https://manuelcoletta1-source.github.io/ipr-exchange/">IPR-EXCHANGE</a>
+  <section class="grid2" id="modules">
+    <div class="box">
+      <h2>Moduli core (IPR stack)</h2>
+      <p>
+        • IPR-CORE — struttura, lifecycle, versioning<br/>
+        • IPR-GATE — controllo ex-ante (deny-by-default)<br/>
+        • IPR-COMPLY — stato di conformità (auditabile)<br/>
+        • IPR-EXCHANGE — scambio controllato (allow-by-proof)
+      </p>
     </div>
-    <p class="muted">
-      Lifecycle, controllo ex-ante, conformità e scambio basato su identità verificabile.
-    </p>
-  </section>
-
-  <section class="card">
-    <h3>Operatività e interoperabilità</h3>
-    <div class="btns">
-      <a class="btn" href="https://manuelcoletta1-source.github.io/iospace/">IOSPACE</a>
-      <a class="btn" href="https://manuelcoletta1-source.github.io/neuroloop/">NEUROLOOP</a>
-      <a class="btn" href="https://manuelcoletta1-source.github.io/metaexchange/">METAEXCHANGE</a>
+    <div class="box">
+      <h2>Policy & fondazione</h2>
+      <p>
+        • UNEBDO — validità tecnica giuridico-computabile<br/>
+        • OPC — policy computabile (valutazione e controllo)<br/>
+        • UE-IPR-REGISTRY — registry sperimentale hash-only
+      </p>
     </div>
-    <p class="muted">
-      Spazi operativi governati, runtime a feedback continuo e interoperabilità strutturata.
+  </section>
+
+  <section class="box" id="standards">
+    <h2>Standard di sistema</h2>
+    <p>
+      Output e formati sono progettati per essere:
+      deterministici, verificabili offline, minimizzati (GDPR-min).
+      Regola globale: <b>FAIL-CLOSED</b>.
     </p>
   </section>
 
-  <section class="card">
-    <h3>Governance cross-dominio</h3>
-    <div class="btns">
-      <a class="btn" href="https://manuelcoletta1-source.github.io/cyberglobal/">CyberGlobal (DUAL-USE)</a>
-    </div>
-    <p class="muted">
-      Coordinamento globale controllato, auditabile e UE-first.
+  <section class="box" id="pipeline">
+    <h2>Pipeline (alto livello)</h2>
+    <p>
+      Create → Verify → (Comply) → Gate → Exchange → Registry
+      <br/>
+      Ogni passaggio produce output verificabile; in caso di mismatch o indeterminatezza:
+      <b>blocco</b>.
     </p>
   </section>
 
-  <section class="card">
-    <h3>Orchestrazione C2</h3>
-    <div class="btns">
-      <a class="btn" href="https://manuelcoletta1-source.github.io/gitjoker-c2/">GitJoker-C2 / AI JOKER-C2</a>
-    </div>
-    <p class="muted">
-      Comando e controllo verificabile dei workflow IPR-centrici.
-    </p>
-  </section>
-
-</main>
+</div>
 
 <footer>
-  <p class="muted">
-    © Manuel Coletta<br/>
-    <b>Esoterologia Edizioni</b><br/>
-    Hermeticum B.C.E. · Technology
-  </p>
+  <div class="wrap">
+    <p class="small">
+      HERMETICUM B.C.E. S.r.l. — Technology · Specifiche e moduli · UE-first · Fail-closed
+    </p>
+  </div>
 </footer>
 
 </body>
