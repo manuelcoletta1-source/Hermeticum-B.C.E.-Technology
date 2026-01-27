@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Hermeticum B.C.E. — Technology</title>
-  <meta name="description" content="Repository tecnologico ufficiale: moduli, standard e pipeline verificabile. UE-first, audit-first, fail-closed."/>
+  <meta name="description" content="Technology: moduli, stack IPR, policy computabile, C2 e componenti. UE-first, audit-first, fail-closed."/>
   <link rel="stylesheet" href="./assets/ui.css"/>
 </head>
 <body>
@@ -12,13 +12,14 @@
 <header>
   <div class="wrap nav">
     <a class="btn primary" href="./">Technology</a>
-    <a class="btn" href="#modules">Moduli</a>
-    <a class="btn" href="#standards">Standard</a>
-    <a class="btn" href="#pipeline">Pipeline</a>
+    <a class="btn" href="#stack">Stack</a>
+    <a class="btn" href="#moduli">Moduli</a>
+    <a class="btn" href="#routing">Routing</a>
     <span class="spacer"></span>
-    <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-platform/">EU Gateway</a>
-    <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-b2b/">B2B</a>
-    <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-b2g/">B2G</a>
+    <a class="btn" data-link="corporate" href="#">Corporate</a>
+    <a class="btn" data-link="platform" href="#">EU Gateway</a>
+    <a class="btn" data-link="b2b" href="#">B2B</a>
+    <a class="btn" data-link="b2g" href="#">B2G</a>
   </div>
 </header>
 
@@ -27,61 +28,79 @@
   <section class="box">
     <h1>Hermeticum B.C.E. — Technology</h1>
     <p>
-      Repository tecnologico ufficiale dell’infrastruttura Hermeticum B.C.E.
-      Qui trovi <b>moduli</b>, <b>standard operativi</b> e <b>pipeline verificabile</b>.
-      Nessun documento. Nessuna promessa automatica. Solo specifiche e componenti.
+      Repository tecnologico ufficiale: moduli, componenti e stack C2.
+      Architettura orientata a <b>audit-first</b> e <b>fail-closed</b>.
     </p>
     <p>
       <span class="tag">UE-first</span>
       <span class="tag">Audit-first</span>
-      <span class="tag">Fail-closed</span>
       <span class="tag">Hash-only</span>
+      <span class="tag">Fail-closed</span>
     </p>
     <div class="cta">
-      <a class="btn primary" href="./README.md">README</a>
-      <a class="btn" href="./MODULES.md">Modules</a>
-      <a class="btn" href="./STANDARDS.md">Standards</a>
-      <a class="btn" href="./PIPELINE.md">Pipeline</a>
+      <a class="btn primary" data-link="platform" href="#">Apri EU Gateway</a>
+      <a class="btn" data-link="gitjoker" href="#">GitJoker-C2</a>
+      <a class="btn" data-link="registry" href="#">UE-IPR-REGISTRY</a>
     </div>
   </section>
 
-  <section class="grid2" id="modules">
+  <section class="grid2" id="stack">
     <div class="box">
-      <h2>Moduli core (IPR stack)</h2>
+      <h2>IPR stack (core)</h2>
       <p>
-        • IPR-CORE — struttura, lifecycle, versioning<br/>
-        • IPR-GATE — controllo ex-ante (deny-by-default)<br/>
-        • IPR-COMPLY — stato di conformità (auditabile)<br/>
-        • IPR-EXCHANGE — scambio controllato (allow-by-proof)
+        • IPR-CORE: struttura dati, lifecycle, versioning<br/>
+        • IPR-GATE: enforcement ex-ante (deny-by-default)<br/>
+        • IPR-COMPLY: conformità auditabile (stato, sospensione, decadenza)<br/>
+        • IPR-EXCHANGE: scambio controllato (allow-by-proof)
       </p>
+      <div class="cta">
+        <a class="btn primary" data-link="ipr_core" href="#">IPR-CORE</a>
+        <a class="btn" data-link="ipr_gate" href="#">IPR-GATE</a>
+        <a class="btn" data-link="ipr_comply" href="#">IPR-COMPLY</a>
+        <a class="btn" data-link="ipr_exchange" href="#">IPR-EXCHANGE</a>
+      </div>
     </div>
+
     <div class="box">
-      <h2>Policy & fondazione</h2>
+      <h2>Policy foundation</h2>
       <p>
-        • UNEBDO — validità tecnica giuridico-computabile<br/>
-        • OPC — policy computabile (valutazione e controllo)<br/>
-        • UE-IPR-REGISTRY — registry sperimentale hash-only
+        • UNEBDO: validità tecnica giuridico-computabile<br/>
+        • OPC: policy computabile (valutazione e controllo)
       </p>
+      <div class="cta">
+        <a class="btn primary" data-link="unebdo" href="#">UNEBDO</a>
+        <a class="btn" data-link="opc" href="#">OPC</a>
+      </div>
     </div>
   </section>
 
-  <section class="box" id="standards">
-    <h2>Standard di sistema</h2>
+  <section class="box" id="moduli">
+    <h2>Moduli & componenti</h2>
     <p>
-      Output e formati sono progettati per essere:
-      deterministici, verificabili offline, minimizzati (GDPR-min).
-      Regola globale: <b>FAIL-CLOSED</b>.
+      • EU Gateway (Create/Verify/Evidence Pack): output verificabile offline<br/>
+      • Registry (sperimentale): riferimenti hash-only<br/>
+      • GitJoker-C2: publishing & compliance control<br/>
+      • IPR Gateway: onboarding e accesso controllato
     </p>
+    <div class="cta">
+      <a class="btn primary" data-link="platform" href="#">EU Gateway</a>
+      <a class="btn" data-link="registry" href="#">Registry</a>
+      <a class="btn" data-link="gitjoker" href="#">GitJoker-C2</a>
+      <a class="btn" data-link="ipr" href="#">IPR</a>
+    </div>
   </section>
 
-  <section class="box" id="pipeline">
-    <h2>Pipeline (alto livello)</h2>
+  <section class="box" id="routing">
+    <h2>Routing (profilo)</h2>
     <p>
-      Create → Verify → (Comply) → Gate → Exchange → Registry
-      <br/>
-      Ogni passaggio produce output verificabile; in caso di mismatch o indeterminatezza:
-      <b>blocco</b>.
+      • B2B: imprese (workflow auditabili, evidenza verificabile)<br/>
+      • B2G: enti pubblici (audit, policy testing, sperimentazione)
     </p>
+    <div class="cta">
+      <a class="btn primary" data-link="b2b" href="#">B2B</a>
+      <a class="btn" data-link="b2g" href="#">B2G</a>
+      <a class="btn" data-link="corporate" href="#">Corporate</a>
+    </div>
   </section>
 
 </div>
@@ -89,10 +108,11 @@
 <footer>
   <div class="wrap">
     <p class="small">
-      HERMETICUM B.C.E. S.r.l. — Technology · Specifiche e moduli · UE-first · Fail-closed
+      HERMETICUM B.C.E. S.r.l. — Technology · UE-first · Audit-first · Fail-closed · Hash-only
     </p>
   </div>
 </footer>
 
+<script src="./assets/links.js"></script>
 </body>
 </html>
