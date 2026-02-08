@@ -1,80 +1,52 @@
-# System Model — Verification Architecture (Audit-first)
+# System Model — Verification Architecture
 
 ## Goal
-Produrre stati verificabili, auditabili e confrontabili nel tempo, senza dipendere da un’autorità centrale.
+Produrre stati verificabili e auditabili nel tempo, senza dipendere da autorità centrali.
 
----
-
-## Primitiva
+## Primitive
 Hash crittografico:
 
 H(m) = h
 
-dove:
 - m = payload (contenuto)
-- h = fingerprint (impronta deterministica)
+- h = fingerprint (impronta)
 
-Proprietà operative richieste:
-- determinismo
-- resistenza a preimage
-- resistenza a collisioni (pratica)
-
----
+Proprietà operative: determinismo, resistenza a preimage, resistenza a collisioni (pratica).
 
 ## Layers
 
 ### Layer 1 — Payload
-Il contenuto “vero” (file, manifesti, policy, documenti).
+File reali (documenti/manifest/config).
 
 ### Layer 2 — Hashing
-Calcolo dell’impronta:
-- payload → sha256 → fingerprint
-
-Una variazione di 1 bit produce un fingerprint diverso.
+payload → sha256 → fingerprint  
+Se cambia 1 byte, cambia l’hash.
 
 ### Layer 3 — Manifest
 Un file che dichiara:
-- quali payload sono validi
-- quali hash devono combaciare
+- quale payload è atteso
+- quale hash è considerato valido
 
 ### Layer 4 — Verification (indipendente)
 Un verificatore:
-1) scarica il payload
+1) scarica payload
 2) calcola sha256
 3) confronta con manifest
-4) PASS oppure BLOCK
-
-Nessuna API privata richiesta.
+4) PASS o BLOCK
 
 ### Layer 5 — Fail-closed
-Regola:
-- mismatch → invalido (BLOCK)
+Regola: mismatch → BLOCK  
+Niente interpretazione.
 
-Non esistono “quasi validi”.
+## Cost model
+Cv = costo verifica  
+Cf = costo falsificazione non rilevata
 
----
+Obiettivo: Cf >> Cv
 
-## Dominanza ingegneristica (metrica)
-Definizioni:
-- Cv = costo verifica
-- Cf = costo falsificazione non rilevata
-
-Obiettivo:
-Cf >> Cv
-
-Nel modello hash-audit:
-- Cv è basso (calcolo locale)
-- Cf è alto (attacchi crittografici / riscrittura storica / compromissione ampia)
-
----
-
-## Threat model minimo
-- Tampering sul payload: rilevato via mismatch hash
-- Tampering sul manifest: rilevato se ancorato/versionato e confrontato
-- Social engineering: ridotto perché la verifica è deterministica
-
----
+- Cv basso: calcolo locale
+- Cf alto: attacco crittografico / riscrittura storica / compromissione ampia
 
 ## Output
-Uno stato è **valido** solo se i confronti deterministici combaciano.
-Altrimenti: BLOCK.
+Valido ⇢ solo se i confronti deterministici combaciano.  
+Altrimenti ⇢ BLOCK.
