@@ -1,10 +1,3 @@
-{
-  "proto": "HBCE-ENGINEERING-MANIFEST-v1",
-  "kind": "ENGINEERING_VERIFICATION_SET",
-  "policy": ["HASH_ONLY", "FAIL_CLOSED", "AUDIT_FIRST", "UE_FIRST"],
-  "payload": {
-    "path": "engineering/sample-payload/payload.txt",
-    "sha256": "PUT_SHA256_HERE"
-  },
-  "verification_rule": "sha256(payload) MUST equal manifest.payload.sha256, else BLOCK"
-}
+HERMETICUM B.C.E. — SAMPLE PAYLOAD v1
+Purpose: local verification demo
+If one character changes, hash changes.
