@@ -1,4 +1,7 @@
-## Engineering lab
+## Fast entry (engineers)
+- Overview: engineering/OVERVIEW.md
+- Verify in 60s: engineering/verify/verify-in-60s.md
+- Try to break it: engineering/attack-test/try-to-break-it.md## Engineering lab
 Start here: `engineering/README.md`
 ---
 
