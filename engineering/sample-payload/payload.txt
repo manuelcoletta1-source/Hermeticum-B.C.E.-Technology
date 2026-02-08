@@ -1,5 +1,5 @@
 HERMETICUM B.C.E. — SAMPLE PAYLOAD v1
 Purpose: local verification demo (hash-only)
 
-Change ONE character and the sha256 must change.
+If one character changes, the sha256 must change.
 Verification must fail (fail-closed) if manifest is unchanged.
