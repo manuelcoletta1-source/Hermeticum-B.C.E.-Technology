@@ -1,144 +1,161 @@
-# HERMETICUM B.C.E. — TECHNOLOGY CORE  
-Blindata · Computabile · Evolutiva  
-HERMETICUM B.C.E. S.r.l.
+Perfetto. Ecco il README nuovo completo pronto da incollare nel repo
+Hermeticum-B.C.E.-Technology.
 
-➡️ Engineering inspection entry: [engineering/README.md](./engineering/README.md)
+Apri README.md → modifica → incolla tutto questo.
 
----
-
-## What this repository is
-
-This repository contains the **technical core** of the Hermeticum B.C.E. system.
-
-It is designed to be:
-- inspectable  
-- verifiable  
-- auditable  
-- fail-closed  
-
-No trust assumptions are required.  
-Only deterministic verification.
 
 ---
 
-## Core principle
+HERMETICUM B.C.E. — Technology Core
 
-A state is valid only if it can be verified mathematically and independently.
+Engineering-grade verification infrastructure.
+Hash-only · Fail-closed · Audit-first.
 
-If verification fails → the state is invalid.  
-No interpretation layer exists.
+Questo repository contiene il nucleo tecnico dimostrativo del modello Hermeticum:
+verifica matematica deterministica senza fiducia, senza autorità centrale, senza interpretazione.
 
----
-
-## System objective
-
-To produce technical objects that are:
-
-- cryptographically anchored  
-- independently verifiable  
-- traceable over time  
-- resistant to silent modification  
-- audit-first by design  
-
-The system does not rely on institutional authority for technical validity.  
-Validity is derived from **coherence and verification**.
 
 ---
 
-## Repository structure
+Engineering Proof (deterministic)
 
-### Engineering entry
-Direct technical inspection environment:
+Chiunque può verificare in modo indipendente.
 
-`/engineering`
+Payload
 
-Contains:
-- architecture model  
-- local verification procedure  
-- manifest and payload  
-- attack-driven inspection  
+engineering/sample-payload/payload.txt
 
-Start here if you are an engineer or auditor.
+Manifest
 
----
+engineering/manifest/manifest.json
 
-### Architecture layer
-Describes the internal verification logic:
-- payload  
-- hashing  
-- manifest  
-- verification  
-- fail-closed rule  
+Quick verification guide
 
-Deterministic structure only.
+engineering/verify/verify-in-60s.md
+
 
 ---
 
-### Verification layer
-Anyone can verify locally:
+Verification principle
 
-1. download repository  
-2. compute sha256 of payload  
-3. compare with manifest  
-4. PASS or BLOCK  
+Regola unica:
 
-No external authorization required.
+> sha256(payload) MUST equal manifest.sha256
+else → BLOCK
 
----
 
-### Fail-closed model
 
-If any element does not match its declared hash:
+Non esiste interpretazione.
+Non esiste fiducia.
+Solo coerenza matematica.
 
-**BLOCK**
-
-The system does not attempt interpretation.  
-It rejects incoherent states.
 
 ---
 
-## Security philosophy
+Why this matters
 
-Robustness derives from asymmetry:
+Questo repository dimostra:
 
-- cost to verify → low  
-- cost to falsify without detection → extremely high  
+verifica deterministica ex-ante
 
-This creates structural resistance to manipulation.
+integrità verificabile pubblicamente
 
----
+auditabilità senza autorità
 
-## Intended audience
+modello fail-closed
 
-This repository is intended for:
+base per sistemi IPR e infrastrutture critiche
 
-- engineers  
-- security researchers  
-- auditors  
-- institutional technical teams  
-- infrastructure architects  
 
-It is not a marketing repository.  
-It is a technical inspection surface.
+Se un solo carattere cambia → hash cambia → sistema blocca.
+
 
 ---
 
-## Inspection method
+Engineering logic
 
-Do not assume validity.  
-Verify it.
+Sistema minimale intenzionale.
 
-Enter the engineering section and test the system directly.
+Componenti:
 
-If the structure is coherent, it will hold.  
-If not, it will fail under inspection.
+payload verificabile
+
+manifest immutabile
+
+regola matematica
+
+verifica indipendente
+
+
+Questo è il livello zero di una infrastruttura verificabile globale.
+
 
 ---
 
-## Status
+Use case per ingegneri
 
-Active  
-Public  
-Inspectable  
-Append-only evolution
-```0
+Testare il modello:
+
+1. Scaricare payload
+
+
+2. Calcolare sha256
+
+
+3. Confrontare con manifest
+
+
+4. Alterare 1 carattere
+
+
+5. Verificare fail-closed
+
+
+
+Se il sistema non blocca → è rotto.
+Se blocca → è coerente.
+
+
+---
+
+Positioning
+
+Questo non è un semplice repo demo.
+È un proof-of-logic.
+
+Base per:
+
+sistemi identità verificabile
+
+AI auditabile
+
+robot con identità crittografica
+
+infrastrutture UE verificabili
+
+ambienti cyber-fisici deterministici
+
+
+
+---
+
+Philosophy
+
+Trust is optional.
+Verification is mandatory.
+
+
+---
+
+Status
+
+Active engineering core
+Public verification enabled
+Open to analysis and stress test
+
+
+---
+
+HERMETICUM B.C.E.
+
+Blindata · Computabile · Evolutiva
