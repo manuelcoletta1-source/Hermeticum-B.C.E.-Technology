@@ -1,30 +1,18 @@
 # Verify in 60 seconds (deterministic)
 
-This repo contains a minimal, engineer-facing proof:
-**hash-only verification + fail-closed rule**.
-
-## Files
+## What to verify
 - Payload: `engineering/sample-payload/payload.txt`
 - Manifest: `engineering/manifest/manifest.json`
 
-Manifest declares the expected sha256:
-
-`563dec5f69b0a0c81714af2055f04b8b4870653e8a273254d35b19adf4755756`
-
-## Verify (any OS)
-
-### Option A — Linux / macOS
-Compute:
-`sha256sum engineering/sample-payload/payload.txt`
-
-### Option B — Windows PowerShell
-Compute:
-`Get-FileHash engineering/sample-payload/payload.txt -Algorithm SHA256`
-
 ## Rule (fail-closed)
-- If computed sha256 == manifest sha256 → **PASS**
-- Else → **BLOCK**
+Computed sha256(payload) must match manifest sha256.
+Mismatch → BLOCK.
+
+## How to compute sha256 (examples)
+- Linux/macOS: `sha256sum engineering/sample-payload/payload.txt`
+- Windows PowerShell: `Get-FileHash engineering/sample-payload/payload.txt -Algorithm SHA256`
 
 ## Tamper test
-Change **one character** in `payload.txt` and recompute.
-The sha256 must change. If manifest is unchanged, result must be **BLOCK**.
+Change one character in payload, recompute sha256:
+- sha256 must change
+- if manifest unchanged → BLOCK
