@@ -1,34 +1,36 @@
-# Try to break it (Attack-driven inspection)
+# Try to break the system
 
-Questa sezione è volutamente “ostile”: un sistema serio deve reggere l’ispezione.
+This repository exposes a minimal deterministic verification model.
 
-## Attack 1 — Modify payload
-Azione:
-- cambia 1 carattere in engineering/sample-payload/payload.txt
+You are invited to test its robustness.
 
-Atteso:
-- sha256 cambia
-- manifest non combacia
-- esito = BLOCK
+## Test 1 — Modify payload
+Open:
+engineering/sample-payload/payload.txt
 
-## Attack 2 — Modify manifest to match tampered payload
-Azione:
-- aggiorna manifest.payload.sha256 per farlo combaciare col payload manomesso
+Change one character.
 
-Significato:
-- hai creato un nuovo stato
-- nel sistema reale, questo cambio deve essere tracciato e ancorato (append-only)
+Compute sha256 again.
 
-## Attack 3 — Add “trust” bypass
-Azione:
-- prova a inventare una regola che bypassa la verifica
+Expected result:
+hash no longer matches manifest → BLOCK
 
-Atteso:
-- non esiste alcun bypass: mismatch → BLOCK
+## Test 2 — Attempt silent modification
+Modify payload without updating manifest.
 
-## Attack 4 — Ambiguity injection
-Azione:
-- prova a rendere la regola interpretativa
+Expected result:
+verification fails.
 
-Atteso:
-- la regola resta deterministica: match o mismatch.
+## Test 3 — Attempt manifest forgery
+Change manifest sha256.
+
+Meaning:
+you created a new state.
+In a real anchored system this leaves trace and requires new verification state.
+
+## Core rule
+If mismatch is not detected → system is broken.
+If mismatch is detected → system is coherent.
+
+## Purpose
+This repository demonstrates deterministic verification without authority trust.
