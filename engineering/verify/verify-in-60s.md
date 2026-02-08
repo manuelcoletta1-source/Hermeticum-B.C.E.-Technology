@@ -1,34 +1,30 @@
-# Verify in 60 seconds (Local)
+# Verify in 60 seconds (deterministic)
 
-Obiettivo: verificare un payload con confronto deterministico.
+This repo contains a minimal, engineer-facing proof:
+**hash-only verification + fail-closed rule**.
 
-## Step 1 — Download
-- GitHub: Code → Download ZIP
-oppure
-- git clone (se usi git)
+## Files
+- Payload: `engineering/sample-payload/payload.txt`
+- Manifest: `engineering/manifest/manifest.json`
 
-## Step 2 — Compute sha256
-Payload:
-engineering/sample-payload/payload.txt
+Manifest declares the expected sha256:
 
-Linux/macOS:
-sha256sum engineering/sample-payload/payload.txt
+`563dec5f69b0a0c81714af2055f04b8b4870653e8a273254d35b19adf4755756`
 
-Windows PowerShell:
-Get-FileHash engineering/sample-payload/payload.txt -Algorithm SHA256
+## Verify (any OS)
 
-## Step 3 — Compare with manifest
-Manifest:
-engineering/manifest/manifest.json
+### Option A — Linux / macOS
+Compute:
+`sha256sum engineering/sample-payload/payload.txt`
 
-Regola:
-sha256(payload) MUST equal manifest.payload.sha256
+### Option B — Windows PowerShell
+Compute:
+`Get-FileHash engineering/sample-payload/payload.txt -Algorithm SHA256`
 
-## Step 4 — Result
-- match → PASS
-- mismatch → BLOCK (fail-closed)
+## Rule (fail-closed)
+- If computed sha256 == manifest sha256 → **PASS**
+- Else → **BLOCK**
 
 ## Tamper test
-Modifica 1 carattere nel payload e ricalcola sha256.
-Deve risultare diverso.
-Se il manifest non cambia: esito deve essere BLOCK.
+Change **one character** in `payload.txt` and recompute.
+The sha256 must change. If manifest is unchanged, result must be **BLOCK**.
