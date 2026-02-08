@@ -1,118 +1,131 @@
-<!doctype html>
-<html lang="it">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Hermeticum B.C.E. — Technology</title>
-  <meta name="description" content="Technology: moduli, stack IPR, policy computabile, C2 e componenti. UE-first, audit-first, fail-closed."/>
-  <link rel="stylesheet" href="./assets/ui.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HERMETICUM B.C.E. — Technology Core</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0b0b0b;
+    color:#eaeaea;
+}
+header{
+    padding:60px 20px;
+    text-align:center;
+    background:#050505;
+    border-bottom:1px solid #222;
+}
+h1{
+    font-size:34px;
+    margin:0;
+    letter-spacing:1px;
+}
+.subtitle{
+    color:#aaa;
+    margin-top:10px;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+.card{
+    background:#111;
+    padding:25px;
+    margin:20px 0;
+    border:1px solid #222;
+    border-radius:10px;
+}
+a.button{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 18px;
+    background:#0f62fe;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+a.button:hover{
+    background:#2a7bff;
+}
+.footer{
+    text-align:center;
+    color:#666;
+    padding:40px 20px;
+    font-size:14px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <div class="wrap nav">
-    <a class="btn primary" href="./">Technology</a>
-    <a class="btn" href="#stack">Stack</a>
-    <a class="btn" href="#moduli">Moduli</a>
-    <a class="btn" href="#routing">Routing</a>
-    <span class="spacer"></span>
-    <a class="btn" data-link="corporate" href="#">Corporate</a>
-    <a class="btn" data-link="platform" href="#">EU Gateway</a>
-    <a class="btn" data-link="b2b" href="#">B2B</a>
-    <a class="btn" data-link="b2g" href="#">B2G</a>
-  </div>
+<h1>HERMETICUM B.C.E. — TECHNOLOGY CORE</h1>
+<div class="subtitle">
+Blindata · Computabile · Evolutiva<br>
+Engineering inspection interface
+</div>
 </header>
 
-<div class="wrap">
+<div class="container">
 
-  <section class="box">
-    <h1>Hermeticum B.C.E. — Technology</h1>
-    <p>
-      Repository tecnologico ufficiale: moduli, componenti e stack C2.
-      Architettura orientata a <b>audit-first</b> e <b>fail-closed</b>.
-    </p>
-    <p>
-      <span class="tag">UE-first</span>
-      <span class="tag">Audit-first</span>
-      <span class="tag">Hash-only</span>
-      <span class="tag">Fail-closed</span>
-    </p>
-    <div class="cta">
-      <a class="btn primary" data-link="platform" href="#">Apri EU Gateway</a>
-      <a class="btn" data-link="gitjoker" href="#">GitJoker-C2</a>
-      <a class="btn" data-link="registry" href="#">UE-IPR-REGISTRY</a>
-    </div>
-  </section>
+<div class="card">
+<h2>System status</h2>
+<p>
+Public. Verifiable. Audit-first.<br>
+No authority required for technical validation.<br>
+Validity derives from deterministic verification.
+</p>
+</div>
 
-  <section class="grid2" id="stack">
-    <div class="box">
-      <h2>IPR stack (core)</h2>
-      <p>
-        • IPR-CORE: struttura dati, lifecycle, versioning<br/>
-        • IPR-GATE: enforcement ex-ante (deny-by-default)<br/>
-        • IPR-COMPLY: conformità auditabile (stato, sospensione, decadenza)<br/>
-        • IPR-EXCHANGE: scambio controllato (allow-by-proof)
-      </p>
-      <div class="cta">
-        <a class="btn primary" data-link="ipr_core" href="#">IPR-CORE</a>
-        <a class="btn" data-link="ipr_gate" href="#">IPR-GATE</a>
-        <a class="btn" data-link="ipr_comply" href="#">IPR-COMPLY</a>
-        <a class="btn" data-link="ipr_exchange" href="#">IPR-EXCHANGE</a>
-      </div>
-    </div>
+<div class="card">
+<h2>Engineering entry</h2>
+<p>
+This repository is designed to be inspected technically.<br>
+Everything can be verified independently.
+</p>
 
-    <div class="box">
-      <h2>Policy foundation</h2>
-      <p>
-        • UNEBDO: validità tecnica giuridico-computabile<br/>
-        • OPC: policy computabile (valutazione e controllo)
-      </p>
-      <div class="cta">
-        <a class="btn primary" data-link="unebdo" href="#">UNEBDO</a>
-        <a class="btn" data-link="opc" href="#">OPC</a>
-      </div>
-    </div>
-  </section>
+<a class="button" href="engineering/README.md">Enter engineering inspection</a>
+</div>
 
-  <section class="box" id="moduli">
-    <h2>Moduli & componenti</h2>
-    <p>
-      • EU Gateway (Create/Verify/Evidence Pack): output verificabile offline<br/>
-      • Registry (sperimentale): riferimenti hash-only<br/>
-      • GitJoker-C2: publishing & compliance control<br/>
-      • IPR Gateway: onboarding e accesso controllato
-    </p>
-    <div class="cta">
-      <a class="btn primary" data-link="platform" href="#">EU Gateway</a>
-      <a class="btn" data-link="registry" href="#">Registry</a>
-      <a class="btn" data-link="gitjoker" href="#">GitJoker-C2</a>
-      <a class="btn" data-link="ipr" href="#">IPR</a>
-    </div>
-  </section>
+<div class="card">
+<h2>Core principle</h2>
+<p>
+A state is valid only if mathematically verifiable.<br>
+If verification fails → BLOCK.<br>
+Fail-closed by design.
+</p>
+</div>
 
-  <section class="box" id="routing">
-    <h2>Routing (profilo)</h2>
-    <p>
-      • B2B: imprese (workflow auditabili, evidenza verificabile)<br/>
-      • B2G: enti pubblici (audit, policy testing, sperimentazione)
-    </p>
-    <div class="cta">
-      <a class="btn primary" data-link="b2b" href="#">B2B</a>
-      <a class="btn" data-link="b2g" href="#">B2G</a>
-      <a class="btn" data-link="corporate" href="#">Corporate</a>
-    </div>
-  </section>
+<div class="card">
+<h2>What engineers can do here</h2>
+<ul>
+<li>Inspect architecture</li>
+<li>Verify payload and manifest</li>
+<li>Test tampering scenarios</li>
+<li>Audit deterministic logic</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Repository</h2>
+<p>
+Full technical repository available on GitHub.
+</p>
+
+<a class="button" href="https://github.com/manuelcoletta1-source/Hermeticum-B.C.E.-Technology">Open repository</a>
+</div>
 
 </div>
 
-<footer>
-  <div class="wrap">
-    <p class="small">
-      HERMETICUM B.C.E. S.r.l. — Technology · UE-first · Audit-first · Fail-closed · Hash-only
-    </p>
-  </div>
-</footer>
+<div class="footer">
+HERMETICUM B.C.E. S.r.l. — Technology Core<br>
+Audit-first · Fail-closed · UE-first
+</div>
 
-<script src="./assets/links.js"></script>
 </body>
 </html>
