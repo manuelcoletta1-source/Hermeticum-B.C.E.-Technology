@@ -1,36 +1,29 @@
-# Try to break the system
+# Try to break it
 
-This repository exposes a minimal deterministic verification model.
+This repo exposes a minimal deterministic verification model.
 
-You are invited to test its robustness.
+## Attack 1 — Modify payload
+Change ONE character in `engineering/sample-payload/payload.txt`.
 
-## Test 1 — Modify payload
-Open:
-engineering/sample-payload/payload.txt
+Expected:
+- sha256 changes
+- manifest mismatch
+- BLOCK
 
-Change one character.
+## Attack 2 — “Silent edit”
+Try to make a change without changing the manifest.
 
-Compute sha256 again.
+Expected:
+- mismatch detected
+- BLOCK
 
-Expected result:
-hash no longer matches manifest → BLOCK
-
-## Test 2 — Attempt silent modification
-Modify payload without updating manifest.
-
-Expected result:
-verification fails.
-
-## Test 3 — Attempt manifest forgery
-Change manifest sha256.
+## Attack 3 — Manifest edit
+Change the manifest sha256 to match the tampered payload.
 
 Meaning:
-you created a new state.
-In a real anchored system this leaves trace and requires new verification state.
+- you created a new state
+- in a real anchored system this must be append-only and auditable
 
 ## Core rule
 If mismatch is not detected → system is broken.
 If mismatch is detected → system is coherent.
-
-## Purpose
-This repository demonstrates deterministic verification without authority trust.
