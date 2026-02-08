@@ -9,53 +9,56 @@
 body{
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
-    background:#0b0b0b;
+    background:#0a0a0a;
     color:#eaeaea;
 }
 header{
-    padding:60px 20px;
+    padding:70px 20px;
     text-align:center;
     background:#050505;
     border-bottom:1px solid #222;
 }
 h1{
-    font-size:34px;
+    font-size:36px;
     margin:0;
     letter-spacing:1px;
 }
 .subtitle{
-    color:#aaa;
-    margin-top:10px;
+    color:#888;
+    margin-top:12px;
 }
 .container{
-    max-width:900px;
+    max-width:950px;
     margin:auto;
     padding:40px 20px;
 }
-.card{
+.block{
     background:#111;
-    padding:25px;
-    margin:20px 0;
+    padding:28px;
+    margin:22px 0;
     border:1px solid #222;
-    border-radius:10px;
+    border-radius:12px;
 }
-a.button{
+h2{
+    margin-top:0;
+}
+.button{
     display:inline-block;
-    margin-top:15px;
-    padding:12px 18px;
+    margin-top:14px;
+    padding:12px 20px;
     background:#0f62fe;
     color:white;
     text-decoration:none;
-    border-radius:6px;
+    border-radius:8px;
     font-weight:bold;
 }
-a.button:hover{
+.button:hover{
     background:#2a7bff;
 }
 .footer{
     text-align:center;
     color:#666;
-    padding:40px 20px;
+    padding:40px;
     font-size:14px;
 }
 </style>
@@ -64,67 +67,68 @@ a.button:hover{
 <body>
 
 <header>
-<h1>HERMETICUM B.C.E. — TECHNOLOGY CORE</h1>
+<h1>HERMETICUM B.C.E.</h1>
 <div class="subtitle">
-Blindata · Computabile · Evolutiva<br>
-Engineering inspection interface
+Technology Core · Engineering Verification Layer<br>
+Blindata · Computabile · Evolutiva
 </div>
 </header>
 
 <div class="container">
 
-<div class="card">
+<div class="block">
 <h2>System status</h2>
 <p>
-Public. Verifiable. Audit-first.<br>
-No authority required for technical validation.<br>
-Validity derives from deterministic verification.
+Public engineering repository.<br>
+Deterministic verification enabled.<br>
+Fail-closed architecture active.
 </p>
 </div>
 
-<div class="card">
+<div class="block">
 <h2>Engineering entry</h2>
 <p>
-This repository is designed to be inspected technically.<br>
-Everything can be verified independently.
+Open technical inspection environment.<br>
+Anyone can verify independently.
 </p>
 
-<a class="button" href="engineering/README.md">Enter engineering inspection</a>
+<a class="button" href="engineering/OVERVIEW.md">Engineering overview</a><br>
+<a class="button" href="engineering/verify/verify-in-60s.md">Verify in 60 seconds</a><br>
+<a class="button" href="engineering/attack-test/try-to-break-it.md">Try to break it</a>
 </div>
 
-<div class="card">
+<div class="block">
 <h2>Core principle</h2>
 <p>
-A state is valid only if mathematically verifiable.<br>
-If verification fails → BLOCK.<br>
-Fail-closed by design.
+sha256(payload) must match manifest.<br>
+If mismatch → BLOCK.<br>
+No authority required for validity.
 </p>
 </div>
 
-<div class="card">
-<h2>What engineers can do here</h2>
+<div class="block">
+<h2>Technical components</h2>
 <ul>
-<li>Inspect architecture</li>
-<li>Verify payload and manifest</li>
-<li>Test tampering scenarios</li>
-<li>Audit deterministic logic</li>
+<li>Deterministic payload verification</li>
+<li>Public manifest</li>
+<li>Hash-only integrity</li>
+<li>Audit-first logic</li>
+<li>Append-only evolution</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="block">
 <h2>Repository</h2>
-<p>
-Full technical repository available on GitHub.
-</p>
-
-<a class="button" href="https://github.com/manuelcoletta1-source/Hermeticum-B.C.E.-Technology">Open repository</a>
+<a class="button" href="https://github.com/manuelcoletta1-source/Hermeticum-B.C.E.-Technology">
+Open GitHub repository
+</a>
 </div>
 
 </div>
 
 <div class="footer">
-HERMETICUM B.C.E. S.r.l. — Technology Core<br>
-Audit-first · Fail-closed · UE-first
+HERMETICUM B.C.E. S.r.l.<br>
+Engineering Core · EU-first · Audit-first
 </div>
 
 </body>
