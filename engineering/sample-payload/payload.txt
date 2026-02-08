@@ -1,0 +1,6 @@
+HERMETICUM B.C.E. — SAMPLE PAYLOAD v1
+Purpose: local verification demo (hash-only)
+
+This file is intentionally simple.
+If you change ONE character, the sha256 must change,
+and verification must fail (fail-closed).
