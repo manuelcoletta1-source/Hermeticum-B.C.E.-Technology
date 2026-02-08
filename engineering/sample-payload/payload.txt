@@ -1,5 +1,5 @@
-HERMETICUM B.C.E. — SAMPLE PAYLOAD v1
-Purpose: local verification demo (hash-only)
+HERMETICUM B.C.E. — SAMPLE PAYLOAD v2
+Purpose: deterministic verification demo (hash-only)
 
-If one character changes, the sha256 must change.
-Verification must fail (fail-closed) if manifest is unchanged.
+If you change ONE character, the sha256 must change.
+If the manifest is unchanged, verification must fail (BLOCK).
