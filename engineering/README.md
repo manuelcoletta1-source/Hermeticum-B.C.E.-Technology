@@ -1,20 +1,23 @@
-# Engineering Entry — Technology Core
+# Engineering Entry — Hermeticum B.C.E. Technology Core
 
-Questo spazio è per **ingegneri**: ispezione, verifica, test.
+Questo spazio è per **ingegneri**: ispezione, verifica, attacco controllato.
 
-**Principio:** nessuna fiducia richiesta. Solo verifica deterministica.  
-**Regola:** mismatch → **BLOCK** (fail-closed).
+**Regola:** mismatch → **BLOCK** (fail-closed).  
+**Politica:** HASH-ONLY · AUDIT-FIRST · UE-FIRST.
 
-## Start
-- Architecture model: [architecture/system-model.md](./architecture/system-model.md)
-- Verify in 60 seconds: [verify/verify-in-60s.md](./verify/verify-in-60s.md)
-- Try to break it: [attack-test/try-to-break-it.md](./attack-test/try-to-break-it.md)
+## Quick links
+- Architecture: `engineering/architecture/system-model.md`
+- Verify in 60 seconds: `engineering/verify/verify-in-60s.md`
+- Try to break it: `engineering/attack-test/try-to-break-it.md`
+
+## Proof set
+- Payload: `engineering/sample-payload/payload.txt`
+- Manifest: `engineering/manifest/manifest.json`
 
 ## What this is
-- Un core verificabile basato su hash + confronto.
-- Un set minimo di file campione per dimostrare PASS/BLOCK.
+Un proof tecnico minimale: payload + hash dichiarato + verifica deterministica.
 
 ## What this is not
-- Non è un sistema “trust me”.
-- Non è un database centrale.
-- Non è una promessa: è un test ripetibile.
+Non è “fidati di me”.  
+Non è un KYC commerciale.  
+Non è un database centrale.
