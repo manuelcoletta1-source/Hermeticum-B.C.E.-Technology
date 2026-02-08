@@ -21,21 +21,23 @@ header{
 h1{
     font-size:44px;
     margin:0;
+    letter-spacing:1px;
 }
 .subtitle{
     color:#888;
-    margin-top:12px;
+    margin-top:14px;
     font-size:16px;
+    line-height:1.5;
 }
 .container{
-    max-width:1000px;
+    max-width:980px;
     margin:auto;
     padding:40px 20px;
 }
 .block{
     background:#111;
     padding:34px;
-    margin:28px 0;
+    margin:26px 0;
     border:1px solid #222;
     border-radius:12px;
 }
@@ -61,6 +63,11 @@ h2{
     padding:60px;
     font-size:14px;
 }
+.small{
+    color:#9a9a9a;
+    font-size:14px;
+    line-height:1.5;
+}
 </style>
 </head>
 
@@ -69,7 +76,8 @@ h2{
 <header>
 <h1>HERMETICUM B.C.E.</h1>
 <div class="subtitle">
-Nucleo tecnologico verificabile · Sistema osservabile nel tempo<br>
+Nucleo tecnologico verificabile nel tempo.<br>
+Integrità prima della fiducia.<br>
 Blindata · Computabile · Evolutiva
 </div>
 </header>
@@ -78,63 +86,35 @@ Blindata · Computabile · Evolutiva
 
 <div class="block">
 <h2>Stato del sistema</h2>
-<p>
+<p class="small">
 Repository tecnico pubblico e verificabile.<br>
-Integrità deterministica attiva.<br>
-Architettura fail-closed operativa.
+Verifica deterministica attiva · fail-closed operativo · hash-only.
 </p>
 </div>
 
 <div class="block">
 <h2>GENESIS</h2>
-<p>
+<p class="small">
 Origine verificabile del sistema.<br>
-Punto iniziale osservabile nel tempo.
+Punto iniziale osservabile e confrontabile nel tempo.
 </p>
 <a class="button" href="GENESIS.md">Apri GENESIS</a>
 </div>
 
 <div class="block">
-<h2>State Zero</h2>
-<p>
-Origine operativa del sistema nel tempo.<br>
-Da qui ogni stato è tracciabile.
-</p>
-<a class="button" href="STATE-ZERO.md">Apri State Zero</a>
-</div>
-
-<div class="block">
-<h2>Time Anchor</h2>
-<p>
-Sistema osservabile nel tempo.<br>
-La coerenza viene verificata negli anni.
-</p>
-<a class="button" href="TIME-ANCHOR.md">Apri Time Anchor</a>
-</div>
-
-<div class="block">
-<h2>Ambiente di verifica</h2>
-<p>
-Chiunque può verificare l’integrità in modo indipendente.
+<h2>Verifica (1 minuto)</h2>
+<p class="small">
+Regola: sha256(payload) deve coincidere con il manifest.<br>
+Se non coincide → BLOCCO.
 </p>
 <a class="button" href="engineering/verify/verify-in-60s.md">Verifica in 60 secondi</a><br>
-<a class="button" href="engineering/attack-test/try-to-break-it.md">Prova a modificarlo</a><br>
-<a class="button" href="engineering/LIVE-VERIFICATION.md">Ambiente di verifica pubblica</a>
-</div>
-
-<div class="block">
-<h2>Challenge pubblica</h2>
-<p>
-Prova a rompere la coerenza del modello.<br>
-Se una modifica non viene rilevata, il sistema fallisce.
-</p>
-<a class="button" href="CHALLENGE.md">Apri challenge</a>
+<a class="button" href="engineering/attack-test/try-to-break-it.md">Prova a modificarlo</a>
 </div>
 
 <div class="block">
 <h2>Proof Pack</h2>
-<p>
-Scarica lo stato verificabile e confrontalo nel tempo.
+<p class="small">
+Scarica lo stato verificabile e archivialo nel tempo.
 </p>
 <a class="button" href="PROOF-PACK.md">Apri Proof Pack</a><br>
 <a class="button" href="https://github.com/manuelcoletta1-source/Hermeticum-B.C.E.-Technology/archive/refs/heads/main.zip">
@@ -143,34 +123,7 @@ Scarica repository completo
 </div>
 
 <div class="block">
-<h2>Nucleo infrastrutturale</h2>
-<p>
-Base tecnica per infrastrutture verificabili nel tempo.<br>
-Validità matematica indipendente.
-</p>
-<a class="button" href="INFRASTRUCTURE-CORE.md">Apri nucleo infrastrutturale</a>
-</div>
-
-<div class="block">
-<h2>Nodo globale aperto</h2>
-<p>
-Nodo tecnico osservabile e replicabile.<br>
-Accesso libero senza autorizzazione.
-</p>
-<a class="button" href="GLOBAL-NODE.md">Apri nodo globale</a>
-</div>
-
-<div class="block">
-<h2>Regola fondamentale</h2>
-<p>
-sha256(payload) deve coincidere con il manifest.<br>
-Se non coincide → BLOCCO.<br>
-Verifica matematica indipendente.
-</p>
-</div>
-
-<div class="block">
-<h2>Repository tecnico</h2>
+<h2>Repository</h2>
 <a class="button" href="https://github.com/manuelcoletta1-source/Hermeticum-B.C.E.-Technology">
 Apri repository su GitHub
 </a>
