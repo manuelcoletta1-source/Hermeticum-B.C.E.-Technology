@@ -1,9 +1,5 @@
-Perfetto. Ecco il README nuovo completo pronto da incollare nel repo
-Hermeticum-B.C.E.-Technology.
-
-Apri README.md → modifica → incolla tutto questo.
-
-
+## Engineering lab
+Start here: `engineering/README.md`
 ---
 
 HERMETICUM B.C.E. — Technology Core
