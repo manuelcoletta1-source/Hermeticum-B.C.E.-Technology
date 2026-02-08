@@ -6,6 +6,7 @@ Questo spazio è per **ingegneri**: ispezione, verifica, attacco controllato.
 **Politica:** HASH-ONLY · AUDIT-FIRST · UE-FIRST.
 
 ## Quick links
+- Overview: engineering/OVERVIEW.md
 - Architecture: `engineering/architecture/system-model.md`
 - Verify in 60 seconds: `engineering/verify/verify-in-60s.md`
 - Try to break it: `engineering/attack-test/try-to-break-it.md`
