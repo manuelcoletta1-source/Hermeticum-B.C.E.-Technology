@@ -1,45 +1,34 @@
 # Try to break it (Attack-driven inspection)
 
-Questa sezione esiste per un motivo:
-un sistema serio deve poter essere attaccato, ispezionato e verificato.
+Questa sezione è volutamente “ostile”: un sistema serio deve reggere l’ispezione.
 
-## Attack 1 — Change 1 byte in payload
+## Attack 1 — Modify payload
 Azione:
-- modifica 1 carattere in engineering/sample-payload/payload.txt
+- cambia 1 carattere in engineering/sample-payload/payload.txt
 
 Atteso:
 - sha256 cambia
 - manifest non combacia
 - esito = BLOCK
 
-## Attack 2 — Forge the manifest
+## Attack 2 — Modify manifest to match tampered payload
 Azione:
-- cambia manifest.payload.sha256 per farlo combaciare col payload manomesso
+- aggiorna manifest.payload.sha256 per farlo combaciare col payload manomesso
 
-Atteso (in un sistema completo):
-- il manifest deve essere versionato/ancorato
-- ogni cambio lascia traccia e richiede nuovo stato pubblico
+Significato:
+- hai creato un nuovo stato
+- nel sistema reale, questo cambio deve essere tracciato e ancorato (append-only)
 
-Qui (demo):
-- stai simulando il motivo per cui il manifest, nel mondo reale, va ancorato e tracciato.
-
-## Attack 3 — “Trust me” injection
+## Attack 3 — Add “trust” bypass
 Azione:
-- prova a inserire una frase tipo “è valido perché lo dico io”
+- prova a inventare una regola che bypassa la verifica
 
 Atteso:
-- non esiste alcun canale di validità che bypassi il confronto hash.
+- non esiste alcun bypass: mismatch → BLOCK
 
-## Attack 4 — Confusion / ambiguity
+## Attack 4 — Ambiguity injection
 Azione:
-- prova a rendere la regola “interpretativa”
+- prova a rendere la regola interpretativa
 
 Atteso:
-- la regola resta: mismatch → BLOCK
-- nessun “quasi valido”.
-
-## Conclusione
-Se puoi far passare un contenuto non coerente senza lasciare traccia:
-hai trovato un bug di governance.
-Altrimenti:
-il modello è robusto per ciò che dichiara.
+- la regola resta deterministica: match o mismatch.
