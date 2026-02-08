@@ -4,7 +4,7 @@
   "policy": ["HASH_ONLY", "FAIL_CLOSED", "AUDIT_FIRST", "UE_FIRST"],
   "payload": {
     "path": "engineering/sample-payload/payload.txt",
-    "sha256": "PUT_SHA256_OF_payload.txt_HERE"
+    "sha256": "563dec5f69b0a0c81714af2055f04b8b4870653e8a273254d35b19adf4755756"
   },
   "verification_rule": "sha256(payload) MUST equal manifest.payload.sha256, else BLOCK"
 }
